@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Inika", "Verdana", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+h1 {
+  font-family: "Inter", "Verdana", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.125rem;
+}
+
+h2 {
+  font-family: "Inika", "Verdana", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+h3 {
+  font-family: "Inter", "Verdana", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+h4 {
+  font-family: "Inter", "Verdana", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
