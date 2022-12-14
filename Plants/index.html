@@ -1,12 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plants</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Plants</title>
 </head>
 <body>
-    
+<!-- Header
+======================== -->
+<header class="header container">
+  <a class="logo" href="index.html">Plants</a>
+    <nav class="header__navigation">
+      <ul class="navigation">
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="index.html" active>Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="#">About us</a></li>
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="#">Service</a></li>
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="#">Price</a></li>
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="#">Contacts</a></li>    
+      </ul>
+    </nav>
+</header>
+<!-- Main
+======================== -->
+<main class="container"> 
+<!-- Welcome
+======================== -->
+<section class="welcome" aria-label="welcome section">
+  <img class="welcome__image" src="./images/leafs.png" alt="leafs">
+    <div class="welcome__card">
+        <h2>We grow <span>plants</span> and give you oxygen</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <button class="welcome__button button welcome__button_hover welcome__button_active" type="button">LEARN MORE</button>
+    </div>
+</section>
+
+<!-- About
+======================== -->
+<section class="about" aria-label="about us section">
+  <div class="about__card">
+    <h2>We are <span>professional experienced</span> gardeners</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+  </div>
+    <img class="about__image" src="./images/houseplant_1.png" alt="houseplant">
+</section>
+
+<!-- Service
+======================== -->
+<section class="service" aria-label="service and our projects section">
+  <h2>Service and our projects</h2>
+    <div class="service__buttons">
+      <button class="service__button button service__button_hover service__button_active" type="button">Gardens</button>
+        <button class="service__button button service__button_hover service__button_active" type="button">Lawn</button>
+          <button class="service__button service__button service__button_hover button_active" type="button">Planting</button>
+    </div>
+  <div class="cards grid">
+    <a href="#" class="cards__item">
+      <figure>
+        <span class="cards-img" style="background-image: url(./images/projects_1.jpg)"></span>
+          <figcaption>
+            <h3 class="cards-title">Garden care</h3>
+              <p class="cards-text">Lorem Ipsum has been the industry</p>
+          </figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="cards__item">
+      <figure>
+        <span class="cards-img" style="background-image: url(./images/projects_2.jpg)"></span>
+          <figcaption>
+            <h3 class="cards-title">Planting</h3>
+              <p class="cards-text">Lorem Ipsum has been the industry</p>
+          </figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="cards__item">
+      <figure>
+        <span class="cards-img" style="background-image: url(./images/projects_3.jpg)"></span>
+          <figcaption>
+            <h3 class="cards-title">Lawn care</h3>
+              <p class="cards-text">Lorem Ipsum has been the industry</p>
+          </figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="cards__item">
+      <figure>
+        <span class="cards-img" style="background-image: url(./images/projects_4.jpg)"></span>
+          <figcaption>
+            <h3 class="cards-title">Planting</h3>
+              <p class="cards-text">Lorem Ipsum has been the industry</p>
+          </figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="cards__item">
+      <figure>
+        <span class="cards-img" style="background-image: url(./images/projects_5.jpg)"></span>
+          <figcaption>
+              <h3 class="cards-title">Garden care</h3>
+              <p class="cards-text">Lorem Ipsum has been the industry</p>
+          </figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="cards__item">
+      <figure>
+        <span class="cards-img" style="background-image: url(./images/projects_6.jpg)"></span>
+          <figcaption>
+            <h3 class="cards-title">Planting</h3>
+              <p class="cards-text">Lorem Ipsum has been the industry</p>
+          </figcaption>
+      </figure>
+    </a>
+  </div>
+</section>
+
+<!-- Prices
+======================== -->
+<section class="price" aria-label="prices section">
+  <div class="prices-card">
+    <h2>Prices</h2>
+  <!-- Prices accordion
+  ======================== -->
+  <div class="accordion">
+    <!-- Accordion first item -->
+    <div class="accordion__button">
+      <p>Basics</p>
+        <a class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active" href="#"><img src="./images/accordion_btn.svg" width="16" height="16" alt="dropdown"></a>
+    </div>
+
+      <div class="accordion__opened" style="display: none;">
+        <div class="accordion__button-opened">
+          <p>Basics</p>
+            <a class="accordion__dropup-btn accordion__dropup-btn_hover accordion__dropup-btn_active" href="#"><img src="./images/accordion_btn_close.svg" width="16" height="16" alt="dropup"></a>
+        </div>
+      
+        <hr style="border: 2px solid rgb(157, 158, 160);">
+          <p class="panel__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+            <p class="panel__price"><span>15</span>/ per hour</p>
+              <a class="panel__button panel__button_hover panel__button_active" href="#contacts">Order</a>
+      </div>
+
+    <!-- Accordion second item -->
+    <div class="accordion__button">
+      <p>Standard</p>
+        <a class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active" href="#"><img src="./images/accordion_btn.svg" width="16" height="16" alt="dropdown"></a>
+    </div>
+
+      <div class="accordion__opened" style="display: none;">
+        <div class="accordion__button-opened">
+          <p>Standard</p>
+            <a class="accordion__dropup-btn accordion__dropup-btn_hover accordion__dropup-btn_active" href="#"><img src="./images/accordion_btn_close.svg" width="16" height="16" alt="dropup"></a>
+        </div>
+      
+        <hr style="border: 2px solid rgb(157, 158, 160);">
+          <p class="panel__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+            <p class="panel__price"><span>25</span>/ per hour</p>
+              <a class="panel__button panel__button_hover panel__button_active" href="#contacts">Order</a>
+      </div>
+
+    <!-- Accordion third item -->
+    <div class="accordion__button">
+      <p>Pro care</p>
+        <a class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active" href="#"><img src="./images/accordion_btn.svg" width="16" height="16" alt="dropdown"></a>
+    </div>
+
+      <div class="accordion__opened" style="display: none;">
+        <div class="accordion__button-opened">
+          <p>Pro care</p>
+            <a class="accordion__dropup-btn accordion__dropup-btn_hover accordion__dropup-btn_active" href="#"><img src="./images/accordion_btn_close.svg" width="16" height="16" alt="dropup"></a>
+        </div>
+      
+        <hr style="border: 2px solid rgb(157, 158, 160);">
+          <p class="panel__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+            <p class="panel__price"><span>35</span>/ per hour</p>
+              <a class="panel__button panel__button_hover panel__button_active" href="#contacts">Order</a>
+      </div>
+  </div>
+  </div>
+
+    <div class="prices-contacts">
+      <h3>Our best <span>gardeners</span> are ready to help you</h3>
+        <button class="prices__button button prices__button_hover prices__button_active" type="button">Contact us</button>
+    </div>
+    <img class="prices__leafs-right" src="./images/leafs_small.png" alt="leafs">
+</section>
+
+<!-- Contact us
+======================== -->
+<section class="contact" aria-label="contact us section" id="contacts">
+  <img class="contact__image" src="./images/employee.png" alt="employee">
+  <h2>Contact us</h2>
+
+  <!-- City select -->
+  <div class="city">
+    <div class="city__dropdown-btn">
+      <p>City</p>
+      <a class="city__dropdown-btn city__dropdown-btn_hover city__dropdown-btn_active" href="#"><img src="./images/accordion_city_btn.svg" width="16" height="16" alt="dropdown"></a>
+    </div>
+    <div class="city__dropdown-content">
+      <a href="#">Canandaigua, NY</a>
+      <a href="#">New York City</a>
+      <a href="#">Yonkers, NY</a>
+      <a href="#">Sherrill, NY</a>
+    </div>
+  </div>
+</section>
+</main>
+<!-- Footer
+======================== -->
+<footer class="footer container">
+  <div class="footer__copyright">
+    <p>&copy;</p>
+    <p>2022</p>
+    <p>github</p>
+  </div>
+  <p class="footer__logo">Rolling Scopes School</p>
+  <ul class="social">
+    <li class="social__item"><a href="https://github.com/Intrstng" target="_blank"><img class="git-img" src="images/github.svg" alt="GitHub icon"></a></li>
+      <li class="social__item"><a href="https://rs.school/js-stage0/" target="_blank"><img class="rs-img" src="images/rsschool.svg" alt="RS icon"></a></li>
+        <li class="social__item"><a class="social__link social__link_hover" href="https://www.instagram.com/accounts/login/" target="_blank"><img class="social__icon" src="images/inst_1.svg" alt="instagram"></img></a></li>
+          <li class="social__item"><a class="social__link social__link_hover" href="https://m.facebook.com/login/?locale2=ru_RU" target="_blank"><img class="social__icon" src="images/fb_1.svg" alt="facebook"></img></a></li>
+            <li class="social__item"><a class="social__link social__link_hover" href="https://twitter.com/login?lang=ru" target="_blank"><img class="social__icon" src="images/tw_1.svg" alt="twitter"></img></a></li>
+              <li class="social__item"><a class="social__link social__link_hover" href="https://www.pinterest.com/" target="_blank"><img class="social__icon" src="images/pinterest_1.svg" alt="pinterest"></img></a></li>
+  </ul>
+
+
+</footer>
+
 </body>
 </html>

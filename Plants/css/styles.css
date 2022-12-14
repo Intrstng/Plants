@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.rs-img,
+.git-img {
+  width: 40px;
+  height: 25px;
+}
