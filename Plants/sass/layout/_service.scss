@@ -1,0 +1,97 @@
+.service__head {
+  display: flex;
+  gap: 11.6%;
+  justify-content: left;
+  padding-top: 40px;
+  & > h2 {
+      max-width: 25%;
+      color: $color-primary;
+  }
+}
+.service__buttons {
+  max-width: 75%;
+  display: flex;
+  gap: 39px;
+  align-self: center;
+}
+
+
+
+
+
+.cards {
+  grid-template-columns: repeat(3, minmax(auto, 27%));
+  justify-content: center;
+  column-gap: 9.5%;
+  row-gap: 55px;
+  padding-top: 80px;
+  position: relative;
+}
+.cards-img {
+  display: inline-block;
+  height: 349px;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  transition: transform 0.8s ease;
+}
+.cards__item {
+  border: 1px solid $color-border;
+  background-color: $color-bground;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 1.25rem;
+  position: relative;
+}
+.cards__item figure {
+  margin: 0;
+}
+.cards-title {
+  margin: 7px 0 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: $color-additional;
+}
+.cards-text {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: $color-text;
+}
+
+
+
+/* Hover - Cards items */
+.cards__item:hover .cards-img {
+  transform: scale(1.04) translateY(-6px);
+}
+.cards-title,
+.cards-text {
+  transition: color 0.3s ease-in;
+}
+.cards__item:hover .cards-title {
+  color: $color-primary;
+}
+
+/* Overlay - Cards items */
+.cards__item .cards-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgb(47, 75, 97);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.cards__item:hover .cards-img::before {
+  opacity: 0.5;
+  z-index: 1;
+}

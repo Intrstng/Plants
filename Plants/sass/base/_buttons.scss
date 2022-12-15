@@ -1,0 +1,43 @@
+.button {
+  padding: 12px;
+  width: 161px;
+  font-family: 'Inika', sans-serif;;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: $color-additional;
+  border: 1px solid $color-additional;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.welcome__button {
+  padding: 10px 27px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: $color-black;
+  border: 2px solid $color-additional;
+  background-color: $color-bground;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.service__button {
+  background-color: $color-bground;
+}
+.prices__button {
+  background-color: $color-light;
+}
+.welcome__button_hover:hover,
+.service__button_hover:hover,
+.prices__button_hover:hover {
+  color: $color-light;
+  background-color: $color-additional;
+}
+.welcome__button_active:active,
+.service__button_active:active,
+.prices__button_active:active {
+  background-color: $color-btn-active;
+}

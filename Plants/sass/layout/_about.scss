@@ -1,0 +1,23 @@
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 93px 0 94px;
+}
+.about__card {
+  max-width: 49.5%;
+  & > h2 {
+    margin: 67px 0 39px;
+    color: $color-primary;
+}
+  & span {
+  color: $color-additional;
+}
+  & > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: $color-text;
+}
+}
