@@ -31,14 +31,33 @@
   background-color: $color-light;
   z-index: 1;
 }
+.adresses__button {
+  padding: 7px 42px;
+  font-family: 'Inika', sans-serif;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.81rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: $color-bground;
+  color: $color-titles;
+  border: 1px solid $color-additional;
+  border-radius: 0.31rem;
+  transition: all 0.3s ease;
+}
 .welcome__button_hover:hover,
 .service__button_hover:hover,
-.prices__button_hover:hover {
+.prices__button_hover:hover,
+.adresses__button_active:hover,
+.panel__button_hover:hover {
   color: $color-light;
   background-color: $color-additional;
 }
 .welcome__button_active:active,
 .service__button_active:active,
-.prices__button_active:active {
-  background-color: $color-btn-active;
+.prices__button_active:active,
+.adresses__button_active:active,
+.panel__button_active:active {
+  background-color: $color-primary;
+  border-color: $color-primary;
 }

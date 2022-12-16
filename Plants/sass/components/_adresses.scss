@@ -1,0 +1,32 @@
+.adresses {
+  padding: 18px 34px 35px;
+  max-width: 448px;
+  border: 1px solid $color-black;
+  border-radius: 1.25rem;
+  background-color: $color-bground;
+}
+.adresses__content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.adresses__titles {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.05em;
+  color: $color-black;
+}
+.adresses__info {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.05em;
+  color: $color-titles;
+}
+.adresses-btn {
+  text-align: center;
+}

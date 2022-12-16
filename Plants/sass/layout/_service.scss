@@ -14,11 +14,6 @@
   gap: 39px;
   align-self: center;
 }
-
-
-
-
-
 .cards {
   grid-template-columns: repeat(3, 330px);
   justify-content: center;
@@ -66,8 +61,6 @@
   color: $color-text;
 }
 
-
-
 /* Hover - Cards items */
 .cards__item:hover .cards-img {
   transform: scale(1.04) translateY(-6px);
@@ -79,8 +72,9 @@
 .cards__item:hover .cards-title {
   color: $color-primary;
 }
-
-
+.cards__item:hover .cards-text {
+  color: $color-black;
+}
 
 // /* Overlay - Cards items */
 // .cards__item .cards-img::before { // figure::before

@@ -15,11 +15,11 @@
 }
 .accordion {
     display: flex;
+    gap: 31px;
     flex-direction: column;
     justify-content: space-between;
     padding: 2.125rem 2.56rem;
     width: 332px;
-    height: 282px;
     border: 1px solid $color-border;
     border-radius: 1.25rem;
 }

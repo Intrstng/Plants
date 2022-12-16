@@ -39,10 +39,12 @@
 .nav-link_hover {
   transition: all 0.1s linear;
 }
-.nav-link_hover:hover {
+.nav-link_hover[active] {
   color: $color-additional;
 }
-.nav-link_hover:active,
-.nav-link_hover[active] {
-  color: $color-btn-active;
+.nav-link_hover:not([active]):hover {
+  color: $color-additional;
+}
+.nav-link_hover:not([active]):active {
+  color: $color-primary;
 }

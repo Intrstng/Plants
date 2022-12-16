@@ -1,0 +1,41 @@
+.city__dropdown-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 30px 35px 15px 40px;
+    background-color: $color-menu-body-active;
+    & > a {
+        display: inline-block;
+        margin-bottom: 7px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 2.5rem;
+        text-decoration: none;   
+        letter-spacing: 0.05em;
+        color: $color-primary;
+    //  border-bottom: 1px solid $color-hr-line;
+        transition: all 0.3s linear;
+        position: relative;
+      }
+      & > a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 101%;
+        height: 1px;
+        left: -5px;
+        bottom: 7px;
+        background-color: $color-hr-line;
+        transition: all 0.3s linear;
+      }
+      & > a:hover {
+        color: $color-titles;
+    //  border-bottom: 1px solid $color-titles;
+      }
+      & > a:hover:after {
+        background-color: $color-titles;
+      }
+}

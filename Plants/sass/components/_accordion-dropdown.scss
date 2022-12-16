@@ -1,0 +1,91 @@
+.accordion__opened {
+                                          display: none;
+  padding: 16px 40px 14px 40px;
+  max-width: 250px;
+  background-color: $color-menu;
+  border-radius: 1.25rem;
+  & > hr {
+    height: 0.5px;
+    color: $color-hr-card;
+  }
+}
+.accordion__button-opened {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+  position: relative;
+  & > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: $color-black;
+
+  }
+  & :after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 96.5%;
+    height: 0.5px;
+    left: 0;
+    top: 29px;
+    background-color: $color-hr-card;
+  }
+}
+.accordion__dropup-btn {
+  & > img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.accordion__dropup-btn_hover {
+}
+.accordion__dropup-btn_active {
+}
+.panel__text {
+                                                                  padding-right: 5px;
+                                                                  margin-bottom: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+  color: $color-titles;
+}
+.panel__price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin-bottom: 10px;
+  & > span {
+    margin-right: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $color-additional;
+  }
+  & > span:before {
+    content: '\0024';
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $color-additional;
+  }
+}
+.panel__button {
+  padding: 5px 27px 5px 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+  color: $color-titles;
+  background-color: $color-light;
+  border-radius: 0.625rem;
+}
+
