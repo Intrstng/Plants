@@ -1,0 +1,47 @@
+.footer__content {
+    padding: 2.5rem 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 3.125rem;
+}
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    gap: 1.25rem;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.social__link {
+    & > img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.logo-rs {
+    padding-left: 11.69rem;
+}
+.rs-img,
+.git-img {
+    height: 2rem;
+    width: 4rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.social__icon {
+    transition: all 0.3s ease;
+}
+.social__link_hover:hover .social__icon {
+    transform: scale(1.15)
+}

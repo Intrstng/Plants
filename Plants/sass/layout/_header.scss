@@ -19,7 +19,7 @@
   text-decoration: none;
   color: $color-black;
 }
-.navigation {
+.nav {
   display: flex;
   margin: 0;
   padding: 0;
@@ -35,4 +35,14 @@
   letter-spacing: 0.1px;
   text-decoration: none;
   color: $color-links;
+}
+.nav-link_hover {
+  transition: all 0.1s linear;
+}
+.nav-link_hover:hover {
+  color: $color-additional;
+}
+.nav-link_hover:active,
+.nav-link_hover[active] {
+  color: $color-btn-active;
 }

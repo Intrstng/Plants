@@ -29,6 +29,7 @@
 }
 .prices__button {
   background-color: $color-light;
+  z-index: 1;
 }
 .welcome__button_hover:hover,
 .service__button_hover:hover,

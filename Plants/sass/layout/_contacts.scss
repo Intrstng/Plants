@@ -1,0 +1,47 @@
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 53px;
+}
+
+
+.contact__content {
+  & > h2 {
+    margin: 6px 0 0 65px;
+    color: $color-primary;
+  }
+}
+.city {
+  width: 450px;
+}
+.city__dropdown {
+  margin-top: 95px;
+  background-color: $color-menu;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.city__dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 35px 5px 20px;
+  & > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.5rem;    
+    letter-spacing: 0.05em;
+    color: $color-titles;
+  }
+}
+
+.city__dropdown-btn {
+  & > img {
+  display: inline-block;
+  vertical-align: middle;
+  }
+}
+.city__dropdown-content {
+  display: none;
+}
