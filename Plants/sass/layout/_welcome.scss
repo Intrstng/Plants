@@ -10,13 +10,14 @@
   & > h1 {
       margin: 46px 0 45px;
   }
-    & span {
-          color: $color-primary;
-      }
-        & > p {
-          margin-bottom: 46px;
-          color: $color-text;
-          @include font('@extend %font-add', 400, 1.25rem, 2.19rem);
+  & span {
+    color: $color-primary;
+  }
+  & > p {
+    margin-bottom: 46px;
+    color: $color-text;
+    @extend %font-add;
+    @include font(400, 1.25rem, 2.19rem);
   }
 }
 .welcome__image {

@@ -4,9 +4,10 @@
   color: $color-additional;
   border: 1px solid $color-additional;
   border-radius: 5px;
-  cursor: 'po@extend %font-add';
+  cursor: pointer;
   @extend %transition;
-  @include font('@extend %font-primary', 400, 1.25rem, 1.625rem);
+  @extend %font-primary;
+  @include font(400, 1.25rem, 1.625rem);
 }
 .welcome__button {
   padding: 10px 27px;
@@ -16,7 +17,8 @@
   border-radius: 10px;
   cursor: pointer;
   @extend %transition;
-  @include font('@extend %font-add', 400, 1rem, 1.25rem);
+  @extend %font-add;
+  @include font(400, 1rem, 1.25rem);
 }
 .service__button {
   background-color: $color-bground;
@@ -33,7 +35,8 @@
   border-radius: 1.25rem;
   @include flex(flex, space-between, center);
   & > p {
-      @include font('@extend %font-add', 700, 1.25rem, 1.25rem);
+      @extend %font-add;
+      @include font(700, 1.25rem, 1.25rem);
   }
 }
 .accordion__dropdown-btn {
@@ -51,21 +54,30 @@
   border: 1px solid $color-additional;
   border-radius: 0.31rem;
   @extend %transition;
-  @include font('@extend %font-primary', 700, 0.625rem, 0.81rem);
+  @extend %font-primary;
+  @include font(700, 0.625rem, 0.81rem);
 }
-.welcome__button_hover:hover,
-.service__button_hover:hover,
-.prices__button_hover:hover,
-.adresses__button_active:hover,
-.panel__button_hover:hover {
-  color: $color-light;
-  background-color: $color-additional;
+.welcome__button,
+.service__button,
+.prices__button,
+.adresses__button,
+.panel__button {
+  &_hover {
+    &:hover {
+      color: $color-light;
+      background-color: $color-additional;
+  }
+  }
 }
-.welcome__button_active:active,
-.service__button_active:active,
-.prices__button_active:active,
-.adresses__button_active:active,
-.panel__button_active:active {
-  background-color: $color-primary;
-  border-color: $color-primary;
+.welcome__button,
+.service__button,
+.prices__button,
+.adresses__button,
+.panel__button {
+  &_active {
+    &:active {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
 }

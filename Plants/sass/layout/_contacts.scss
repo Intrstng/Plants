@@ -1,8 +1,6 @@
 .contact__content {
-  padding-top: 53px;
+  padding-top: 52px;
   @include flex(flex, space-between, flex-start);
-}
-.contact__content {
   & > h2 {
     margin: 6px 0 0 65px;
     color: $color-primary;
@@ -24,7 +22,8 @@
   & > p {  
     letter-spacing: 0.05em;
     color: $color-titles;
-    @include font('@extend %font-add', 400, 1.25rem, 2.5rem);
+    @extend %font-add;
+    @include font(400, 1.25rem, 2.5rem);
   }
 }
 .city__dropdown-btn {
@@ -34,7 +33,7 @@
   }
 }
 .city__dropdown-content {
-                                                                      display: none;
+                                                                     display: none;
   & > a {
     display: inline-block;
     width: 100%;

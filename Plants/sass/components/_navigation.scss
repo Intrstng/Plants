@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  gap: 47px;
+}
+.nav-link {
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  color: $color-links;
+  @extend %font-primary;
+  @include font(400, 1rem, 3.125rem);
+  &_hover {
+      transition: all 0.1s linear;
+      &:not([active]) {
+          &:hover {
+              color: $color-additional;
+          }
+          &:active {
+              color: $color-primary;
+          }
+      }
+  }
+  &_hover[active] {
+      color: $color-additional;
+  }
+}

@@ -13,12 +13,14 @@
 .adresses__titles {
   letter-spacing: 0.05em;
   color: $color-black;
-  @include font('@extend %font-add', 400, 1rem, 2.5rem);
+  @include font(400, 1rem, 2.5rem);
+  @extend %font-add;
 }
 .adresses__info {
   letter-spacing: 0.05em;
   color: $color-titles;
-  @include font('@extend %font-add', 400, 1rem, 2.5rem);
+  @include font(400, 1rem, 2.5rem);
+  @extend %font-add;
 }
 .adresses-btn {
   text-align: center;

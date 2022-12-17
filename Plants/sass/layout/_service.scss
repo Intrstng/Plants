@@ -38,35 +38,51 @@
   background-position: center;
   transition: transform 0.8s ease;
 }
-.cards__item figure {
-  margin: 0;
+.cards__item {
+  & figure {
+    margin: 0;
+}
 }
 .cards-title {
   margin: 7px 0 14px;
   text-align: center;
   color: $color-additional;
-  @include font('@extend %font-add', 700, 1.25rem, 1.25rem);
+  @extend %font-add;
+  @include font(700, 1.25rem, 1.25rem);
 }
 .cards-text {
   margin-bottom: 35px;;
   text-align: center;
   color: $color-text;
-  @include font('@extend %font-add', 400, 1rem, 1.25rem);
+  @extend %font-add;
+  @include font(400, 1rem, 1.25rem);
 }
 
 /* Hover - Cards items */
-.cards__item:hover .cards-img {
-  transform: scale(1.04) translateY(-6px);
+.cards__item {
+  &:hover {
+    & .cards-img {
+      transform: scale(1.04) translateY(-6px);
+    }
+  }
 }
 .cards-title,
 .cards-text {
   transition: color 0.3s ease-in;
 }
-.cards__item:hover .cards-title {
-  color: $color-primary;
+.cards__item {
+  &:hover {
+    & .cards-title {
+      color: $color-primary;
+    }
+  }
 }
-.cards__item:hover .cards-text {
-  color: $color-black;
+.cards__item {
+  &:hover {
+    & .cards-text {
+      color: $color-black;
+    }
+  }
 }
 
 // /* Overlay - Cards items */

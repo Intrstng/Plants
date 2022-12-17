@@ -13,23 +13,24 @@
         color: $color-primary;
         transition: all 0.3s linear;
         position: relative;
-        @include font('@extend %font-add', 400, 1rem, 2.5rem);
-      }
-      & > a:after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 101%;
-        height: 1px;
-        left: -5px;
-        bottom: 7px;
-        background-color: $color-hr-line;
-        transition: all 0.3s linear;
-      }
-      & > a:hover {
-        color: $color-titles;
-      }
-      & > a:hover:after {
-        background-color: $color-titles;
-      }
+        @extend %font-add;
+        @include font(400, 1rem, 2.5rem);
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 101%;
+          height: 1px;
+          left: -5px;
+          bottom: 7px;
+          background-color: $color-hr-line;
+          transition: all 0.3s linear;
+        }
+        &:hover {
+          color: $color-titles;
+          &:after {
+            background-color: $color-titles;
+          }
+        }
+    }
 }

@@ -13,6 +13,7 @@
 }
   & > p {
     color: $color-text;
-    @include font('@extend %font-add', 400, 1.25rem, 1.875rem);
+    @extend %font-add;
+    @include font(400, 1.25rem, 1.875rem);
 }
 }

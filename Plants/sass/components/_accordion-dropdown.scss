@@ -13,20 +13,21 @@
   margin-bottom: 17px;
   position: relative;
   @include flex(flex, space-between, center);
-  & > p {
-    color: $color-black;
-    @include font('@extend %font-add', 700, 1.25rem, 1.25rem);
-  }
-  & :after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 96.5%;
-    height: 0.5px;
-    left: 0;
-    top: 29px;
-    background-color: $color-hr-card;
-  }
+    & > p {
+      color: $color-black;
+      @extend %font-add;
+      @include font(700, 1.25rem, 1.25rem);
+    }
+    &:after {
+     content: '';
+     display: block;
+     position: absolute;
+     width: 96.5%;
+     height: 0.5px;
+     left: 0;
+     top: 29px;
+     background-color: $color-hr-card;
+    }
 }
 .accordion__dropup-btn {
   & > img {
@@ -34,28 +35,30 @@
     vertical-align: middle;
   }
 }
-.accordion__dropup-btn_hover {
-}
-.accordion__dropup-btn_active {
-}
 .panel__text {
                                                                   padding-right: 5px;
                                                                   margin-bottom: 6px;
   color: $color-titles;
-  @include font('@extend %font-add', 300, 0.625rem, 0.625rem);
+  @extend %font-add;
+  @include font(300, 0.625rem, 0.625rem);
 }
 .panel__price {
   margin-bottom: 10px;
-  @include font('@extend %font-add', 400, 0.75rem, 1.25rem);
+  @extend %font-add;
+  @include font(400, 0.75rem, 1.25rem);
   & > span {
     margin-right: 8px;
     color: $color-additional;
-    @include font('@extend %font-add', 700, 1rem, 1.25rem);
+    @extend %font-add;
+    @include font(700, 1rem, 1.25rem);
   }
-  & > span:before {
-    content: '\0024';
-    color: $color-additional;
-    @include font('@extend %font-add', 700, 0.75rem, 1.25rem);
+  & > span {
+    &:before {
+      content: '\0024';
+      color: $color-additional;
+      @extend %font-add;
+      @include font(700, 0.75rem, 1.25rem);
+    }
   }
 }
 .panel__button {
@@ -64,6 +67,6 @@
   color: $color-titles;
   background-color: $color-light;
   border-radius: 0.625rem;
-  @include font('@extend %font-add', 700, 0.875rem, 1.25rem);
+  @extend %font-add;
+  @include font(700, 0.875rem, 1.25rem);
 }
-

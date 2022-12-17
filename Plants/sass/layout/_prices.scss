@@ -1,41 +1,44 @@
 .price__content {
-    padding: 39px 0 129px;
-    @include flex(flex, space-between, flex-start);
+  padding: 39px 0 129px;
+  @include flex(flex, space-between, flex-start);
 }
-.prices-card {
-    & > h2 {
-        margin-bottom: 60px;
-        color: $color-black;
-        @include font('@extend %font-add', 700, 2.5rem, 3rem);
-    }
+.prices__card {
+  & > h2 {
+      margin-bottom: 60px;
+      color: $color-black;
+      @extend %font-add;
+      @include font(700, 2.5rem, 3rem);
+  }
 }
 .accordion {
-    gap: 31px;
-    flex-direction: column;
-    padding: 2.125rem 2.56rem;
-    width: 332px;
-    border: 1px solid $color-border;
-    border-radius: 1.25rem;
-    @include flex(flex, space-between, flex-start);
+  gap: 32px;
+  flex-direction: column;
+  padding: 2.125rem 2.56rem;
+  width: 332px;
+  border: 1px solid $color-border;
+  border-radius: 1.25rem;
+  @include flex(flex, space-between, flex-start);
 }
 .prices-contacts {
-    flex-direction: column;
-    align-self: stretch;
-    position: relative;
-    max-width: 452px;
-    color: $color-black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @include flex(flex, flex-start, flex-end);
-    @include font('@extend %font-add', 700, 2.5rem, 3rem);
-    & > h4 {
-        margin-bottom: 40px;
-    }
-    & span {
-        color: $color-primary;
-    }
+  flex-direction: column;
+  align-self: stretch;
+  position: relative;
+  max-width: 452px;
+  color: $color-black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @include flex(flex, flex-start, flex-end);
+  @extend %font-add;
+  @include font(700, 2.5rem, 3rem);
+  & > h4 {
+      text-align: right;
+      margin-bottom: 40px;
+  }
+  & span {
+      color: $color-primary;
+  }
 }
 .prices__leafs-right {
-    position: absolute;
-    bottom: -20px;
-    right: -10px;
+  position: absolute;
+  bottom: -20px;
+  right: -10px;
 }

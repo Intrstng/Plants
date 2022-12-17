@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="sass/styles.css">
   <title>Plants</title>
 </head>
@@ -14,7 +13,7 @@
 ======================== -->
 <header class="header">
   <div class="header__content">
-  <div class="logo"><img src="images/logo_vector.svg" alt="logo"><a class="logo__link" href="index.html">Plants</a></div>
+  <a class="logo" href="index.html"><object class="logo__img" type="image/svg+xml" data="./images/logo.svg">Your browser does not support SVG</object></a>
     <nav class="header__navigation">
       <ul class="nav">
         <li class="nav-item"><a class="nav-link nav-link_hover" href="index.html" active>Home</a></li>
@@ -35,8 +34,8 @@
   <div class="welcome__content container">
   <img class="welcome__image" src="./images/leafs.png" alt="leafs">
     <div class="welcome__card">
-        <h1>We grow <span>plants</span> and give you oxygen</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1 class="welcome__title">We grow <span>plants</span> and give you oxygen</h1>
+          <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             <button class="welcome__button welcome__button_hover welcome__button_active" type="button">LEARN MORE</button>
     </div>
   </div>
@@ -47,8 +46,8 @@
 <section class="about" aria-label="about us section" id="about">
   <div class="about__content container">
   <div class="about__card">
-    <h2>We are <span>professional experienced</span> gardeners</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown pr@extend %font-add took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <h2 class="about__subtitle">We are <span>professional experienced</span> gardeners</h2>
+      <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
   </div>
     <img class="about__image" src="./images/houseplant_1.png" alt="houseplant">
   </div>
@@ -59,7 +58,7 @@
 <section class="service" aria-label="service and our projects section" id="service">
   <div class="service__content container">
     <div class="service__head">
-      <h2>Service and our projects</h2>
+      <h2 class="service__subtitle">Service and our projects</h2>
         <div class="service__buttons">
           <button class="service__button button service__button_hover service__button_active" type="button">Gardens</button>
             <button class="service__button button service__button_hover service__button_active" type="button">Lawn</button>
@@ -134,14 +133,14 @@
 ======================== -->
 <section class="price" aria-label="prices section" id="price">
   <div class="price__content container">
-  <div class="prices-card">
-    <h2>Prices</h2>
+  <div class="prices__card">
+    <h2 class="prices__subtitle">Prices</h2>
   <!-- Prices accordion
   ======================== -->
   <div class="accordion">
     <!-- Accordion first item -->
     <div class="accordion__button">
-      <p>Basics</p>
+      <p class="accordion__text-button">Basics</p>
         <a class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active" href="#"><img src="./images/accordion_btn.svg" width="16" height="16" alt="dropdown"></a>
     </div>
 
@@ -168,7 +167,7 @@
 
     <!-- Accordion second item -->
     <div class="accordion__button">
-      <p>Standard</p>
+      <p class="accordion__text-button">Standard</p>
         <a class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active" href="#"><img src="./images/accordion_btn.svg" width="16" height="16" alt="dropdown"></a>
     </div>
 
@@ -195,7 +194,7 @@
 
     <!-- Accordion third item -->
     <div class="accordion__button">
-      <p>Pro care</p>
+      <p class="accordion__text-button">Pro care</p>
         <a class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active" href="#"><img src="./images/accordion_btn.svg" width="16" height="16" alt="dropdown"></a>
     </div>
 
@@ -234,13 +233,13 @@
 ======================== -->
 <section class="contact" aria-label="contact us section" id="contacts">
   <div class="contact__content container"> 
-    <img class="employee-image" src="./images/employee.png" alt="employee">
+    <img class="contact__employee-image" src="./images/employee.png" alt="employee">
       <h2>Contact us</h2>
 
   <!-- City select -->
   <div class="city">
     <div class="city__dropdown">
-      <p>City</p>
+      <p class="city__text">City</p>
       <a class="city__dropdown-btn city__dropdown-btn_hover city__dropdown-btn_active" href="#"><img src="./images/accordion_city_btn.svg" width="16" height="16" alt="dropdown"></a>
     </div>
     <div class="city__dropdown-content">
@@ -269,7 +268,7 @@
         <li class="social__item"><a class="social__link social__link_hover" href="https://www.instagram.com/accounts/login/" target="_blank"><img class="social__icon" src="images/inst_1.svg" alt="instagram"></img></a></li>
           <li class="social__item"><a class="social__link social__link_hover" href="https://m.facebook.com/login/?locale2=ru_RU" target="_blank"><img class="social__icon" src="images/fb_1.svg" alt="facebook"></img></a></li>
             <li class="social__item"><a class="social__link social__link_hover" href="https://twitter.com/login?lang=ru" target="_blank"><img class="social__icon" src="images/tw_1.svg" alt="twitter"></img></a></li>
-              <li class="social__item"><a class="social__link social__link_hover" href="https://www.p@extend %font-addest.com/" target="_blank"><img class="social__icon" src="images/p@extend %font-addest_1.svg" alt="p@extend %font-addest"></img></a></li>
+              <li class="social__item"><a class="social__link social__link_hover" href="https://www.pinterest.com/" target="_blank"><img class="social__icon" src="images/pinterest_1.svg" alt="pinterest"></img></a></li>
   </ul>
   </div>
 </footer>

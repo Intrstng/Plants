@@ -1,42 +1,8 @@
 .header__content {
-  height: 134px;
   @include flex(flex, space-between, center);
 }
 .header__content {
-  max-width: 1222px;
+  padding: 43px 0 41px;
+  max-width: $container-width;
   margin: 0 auto;
-}
-.logo {
-  align-self: center;
-}
-.logo__link {
-  text-decoration: none;
-  color: $color-black;
-  @include font('@extend %font-primary', 400, 1rem, 1.3rem);
-}
-.nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-wrap: nowrap;
-  list-style-type: none;
-  gap: 47px;
-}
-.nav-link {
-  letter-spacing: 0.1px;
-  text-decoration: none;
-  color: $color-links;
-  @include font('@extend %font-primary', 400, 1rem, 3.125rem);
-}
-.nav-link_hover {
-  transition: all 0.1s linear;
-}
-.nav-link_hover[active] {
-  color: $color-additional;
-}
-.nav-link_hover:not([active]):hover {
-  color: $color-additional;
-}
-.nav-link_hover:not([active]):active {
-  color: $color-primary;
 }

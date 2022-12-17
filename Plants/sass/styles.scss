@@ -1,6 +1,7 @@
 // Normalize
 @import "../node_modules/normalize.css/normalize.css"; // переделать на normalize.scss
 
+@import "abstracts/fonts";
 @import "abstracts/constants";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
@@ -8,6 +9,8 @@
 @import "base/buttons";
 
 // Components
+@import "components/logo";
+@import "components/navigation";
 @import "components/contact-us";
 @import "components/adresses";
 @import "components/contacts-dropdown";

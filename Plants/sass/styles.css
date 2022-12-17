@@ -1,6 +1,42 @@
 @import "../node_modules/normalize.css/normalize.css";
-.social__icon, .adresses__button, .welcome__button, .button {
+@font-face {
+  font-family: "Inika";
+  src: url("../../fonts/Inika-Regular.ttf") format("ttf");
+  src: local("../../fonts/Inter Regular"), local("Inter-Regular");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inika";
+  src: url("../../fonts/Inika-Bold.ttf") format("ttf");
+  src: local("../../fonts/Inter Regular"), local("Inter-Regular");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.woff2") format("woff2");
+  src: local("../../fonts/Inter Regular"), local("Inter-Regular"), url("../../fonts/Inter-Regular.woff") format("woff"), url("../../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.woff2") format("woff2");
+  src: local("Inter Bold"), local("Inter-Bold"), url("../../fonts/Inter-Bold.woff") format("woff"), url("../../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.social__icon, .logo-svg, .adresses__button, .welcome__button, .button {
   transition: all 0.3s ease;
+}
+
+.nav-link, .adresses__button, .button, h2, body {
+  font-family: "Inika", sans-serif;
+}
+
+.footer__content, .city__dropdown > p, .prices-contacts, .prices__card > h2, .cards-text, .cards-title, .about__card > p, .welcome__card > p, .panel__button, .panel__price > span:before, .panel__price > span, .panel__price, .panel__text, .accordion__button-opened > p, .city__dropdown-content > a, .adresses__info, .adresses__titles, .accordion__button > p, .welcome__button, h4, h3, h1 {
+  font-family: "Inter", sans-serif;
 }
 
 *,
@@ -17,7 +53,6 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "@extend %font-primary";
   font-size: 1rem;
 }
 
@@ -27,69 +62,36 @@ body {
 
 h1 {
   color: #717171;
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.125rem;
 }
 
 h2 {
-  font-family: "@extend %font-primary";
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 3.25rem;
 }
 
 h3 {
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
 }
 
 h4 {
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.125rem;
 }
 
-@font-face {
-  font-family: "Inika";
-  src: url("../../fonts/Inika-Regular.ttf");
-  src: local("Inika");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inika";
-  src: url("../../fonts/Inika-Regular.ttf");
-  src: local("Inika");
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../../fonts/@extend %font-add-Regular.ttf");
-  src: local("Inter");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../../fonts/@extend %font-add-Bold.ttf");
-  src: local("Inter");
-  font-style: normal;
-  font-weight: 700;
-}
 .button {
   padding: 12px;
   width: 161px;
   color: #E06733;
   border: 1px solid #E06733;
   border-radius: 5px;
-  cursor: "po@extend %font-add";
-  font-family: "@extend %font-primary";
+  cursor: pointer;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.625rem;
@@ -102,7 +104,6 @@ h4 {
   background-color: #EDF2EC;
   border-radius: 10px;
   cursor: pointer;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -128,7 +129,6 @@ h4 {
   align-items: center;
 }
 .accordion__button > p {
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -147,7 +147,6 @@ h4 {
   color: #717171;
   border: 1px solid #E06733;
   border-radius: 0.31rem;
-  font-family: "@extend %font-primary";
   font-weight: 700;
   font-size: 0.625rem;
   line-height: 0.81rem;
@@ -156,7 +155,7 @@ h4 {
 .welcome__button_hover:hover,
 .service__button_hover:hover,
 .prices__button_hover:hover,
-.adresses__button_active:hover,
+.adresses__button_hover:hover,
 .panel__button_hover:hover {
   color: #FFFFFF;
   background-color: #E06733;
@@ -169,6 +168,57 @@ h4 {
 .panel__button_active:active {
   background-color: #499A18;
   border-color: #499A18;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo-svg {
+  cursor: pointer;
+}
+
+.logo-svg:hover .logo-path {
+  fill: #E06733;
+}
+.logo-svg:active .logo-path {
+  fill: #499A18;
+}
+
+.logo__img {
+  display: inline-block;
+  width: 81px;
+  height: 22px;
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  gap: 47px;
+}
+
+.nav-link {
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  color: #010201;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 3.125rem;
+}
+.nav-link_hover {
+  transition: all 0.1s linear;
+}
+.nav-link_hover:not([active]):hover {
+  color: #E06733;
+}
+.nav-link_hover:not([active]):active {
+  color: #499A18;
+}
+.nav-link_hover[active] {
+  color: #E06733;
 }
 
 .header,
@@ -197,7 +247,6 @@ h4 {
 .adresses__titles {
   letter-spacing: 0.05em;
   color: #000000;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 2.5rem;
@@ -206,7 +255,6 @@ h4 {
 .adresses__info {
   letter-spacing: 0.05em;
   color: #717171;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 2.5rem;
@@ -234,7 +282,6 @@ h4 {
   color: #499A18;
   transition: all 0.3s linear;
   position: relative;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 2.5rem;
@@ -278,12 +325,11 @@ h4 {
 }
 .accordion__button-opened > p {
   color: #000000;
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
 }
-.accordion__button-opened :after {
+.accordion__button-opened:after {
   content: "";
   display: block;
   position: absolute;
@@ -303,7 +349,6 @@ h4 {
   padding-right: 5px;
   margin-bottom: 6px;
   color: #717171;
-  font-family: "@extend %font-add";
   font-weight: 300;
   font-size: 0.625rem;
   line-height: 0.625rem;
@@ -311,7 +356,6 @@ h4 {
 
 .panel__price {
   margin-bottom: 10px;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.25rem;
@@ -319,7 +363,6 @@ h4 {
 .panel__price > span {
   margin-right: 8px;
   color: #E06733;
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -327,7 +370,6 @@ h4 {
 .panel__price > span:before {
   content: "$";
   color: #E06733;
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1.25rem;
@@ -339,7 +381,6 @@ h4 {
   color: #717171;
   background-color: #FFFFFF;
   border-radius: 0.625rem;
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -351,63 +392,15 @@ h4 {
 }
 
 .header__content {
-  height: 134px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header__content {
+  padding: 43px 0 41px;
   max-width: 1222px;
   margin: 0 auto;
-}
-
-.logo {
-  align-self: center;
-}
-
-.logo__link {
-  text-decoration: none;
-  color: #000000;
-  font-family: "@extend %font-primary";
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.3rem;
-}
-
-.nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-wrap: nowrap;
-  list-style-type: none;
-  gap: 47px;
-}
-
-.nav-link {
-  letter-spacing: 0.1px;
-  text-decoration: none;
-  color: #010201;
-  font-family: "@extend %font-primary";
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 3.125rem;
-}
-
-.nav-link_hover {
-  transition: all 0.1s linear;
-}
-
-.nav-link_hover[active] {
-  color: #E06733;
-}
-
-.nav-link_hover:not([active]):hover {
-  color: #E06733;
-}
-
-.nav-link_hover:not([active]):active {
-  color: #499A18;
 }
 
 .welcome__content {
@@ -431,7 +424,6 @@ h4 {
 .welcome__card > p {
   margin-bottom: 46px;
   color: #636060;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 2.19rem;
@@ -462,7 +454,6 @@ h4 {
 }
 .about__card > p {
   color: #636060;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -524,7 +515,6 @@ h4 {
   margin: 7px 0 14px;
   text-align: center;
   color: #E06733;
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -534,7 +524,6 @@ h4 {
   margin-bottom: 35px;
   text-align: center;
   color: #636060;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -571,17 +560,16 @@ h4 {
   align-items: flex-start;
 }
 
-.prices-card > h2 {
+.prices__card > h2 {
   margin-bottom: 60px;
   color: #000000;
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3rem;
 }
 
 .accordion {
-  gap: 31px;
+  gap: 32px;
   flex-direction: column;
   padding: 2.125rem 2.56rem;
   width: 332px;
@@ -602,12 +590,12 @@ h4 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3rem;
 }
 .prices-contacts > h4 {
+  text-align: right;
   margin-bottom: 40px;
 }
 .prices-contacts span {
@@ -621,12 +609,11 @@ h4 {
 }
 
 .contact__content {
-  padding-top: 53px;
+  padding-top: 52px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-
 .contact__content > h2 {
   margin: 6px 0 0 65px;
   color: #499A18;
@@ -652,7 +639,6 @@ h4 {
 .city__dropdown > p {
   letter-spacing: 0.05em;
   color: #717171;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 2.5rem;
@@ -676,7 +662,6 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 3.125rem;
