@@ -1,38 +1,12 @@
 @import "../node_modules/normalize.css/normalize.css";
-@font-face {
-  font-family: "Inika";
-  src: url("../../fonts/Inika-Regular.ttf") format("ttf");
-  src: local("../../fonts/Inter Regular"), local("Inter-Regular");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inika";
-  src: url("../../fonts/Inika-Bold.ttf") format("ttf");
-  src: local("../../fonts/Inter Regular"), local("Inter-Regular");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../../fonts/Inter-Regular.woff2") format("woff2");
-  src: local("../../fonts/Inter Regular"), local("Inter-Regular"), url("../../fonts/Inter-Regular.woff") format("woff"), url("../../fonts/Inter-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../../fonts/Inter-Bold.woff2") format("woff2");
-  src: local("Inter Bold"), local("Inter-Bold"), url("../../fonts/Inter-Bold.woff") format("woff"), url("../../fonts/Inter-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 .social__icon, .logo-svg, .adresses__button, .welcome__button, .button {
   transition: all 0.3s ease;
 }
 
 .nav-link, .adresses__button, .button, h2, body {
-  font-family: "Inika", sans-serif;
+  font-family: "Inika", serif;
 }
 
 .footer__content, .city__dropdown > p, .prices-contacts, .prices__card > h2, .cards-text, .cards-title, .about__card > p, .welcome__card > p, .panel__button, .panel__price > span:before, .panel__price > span, .panel__price, .panel__text, .accordion__button-opened > p, .city__dropdown-content > a, .adresses__info, .adresses__titles, .accordion__button > p, .welcome__button, h4, h3, h1 {
@@ -116,6 +90,7 @@ h4 {
 .prices__button {
   background-color: #FFFFFF;
   z-index: 1;
+  padding-left: 6px;
 }
 
 .accordion__button {
@@ -219,6 +194,10 @@ h4 {
 }
 .nav-link_hover[active] {
   color: #E06733;
+}
+
+.nav-item:first-child {
+  margin-right: -4px;
 }
 
 .header,
@@ -403,6 +382,11 @@ h4 {
   margin: 0 auto;
 }
 
+.logo {
+  align-self: flex-start;
+  padding-top: 10px;
+}
+
 .welcome__content {
   padding: 52px 0 56px;
   display: flex;
@@ -446,7 +430,8 @@ h4 {
   max-width: 49.5%;
 }
 .about__card > h2 {
-  margin: 67px 0 39px;
+  width: 95%;
+  margin: 69px 0 38px;
   color: #499A18;
 }
 .about__card span {
@@ -476,6 +461,15 @@ h4 {
   display: flex;
   align-self: center;
   gap: 39px;
+}
+
+.service__buttons {
+  align-self: flex-start;
+  margin-top: 29px;
+}
+
+.service__button:last-child {
+  padding-left: 6px;
 }
 
 .cards {
@@ -569,9 +563,9 @@ h4 {
 }
 
 .accordion {
-  gap: 32px;
+  gap: 31px;
   flex-direction: column;
-  padding: 2.125rem 2.56rem;
+  padding: 33px 40px 34px;
   width: 332px;
   border: 1px solid #E3E1D5;
   border-radius: 1.25rem;
@@ -596,7 +590,7 @@ h4 {
 }
 .prices-contacts > h4 {
   text-align: right;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 .prices-contacts span {
   color: #499A18;
@@ -615,7 +609,7 @@ h4 {
   align-items: flex-start;
 }
 .contact__content > h2 {
-  margin: 6px 0 0 65px;
+  margin: 8px 0 0 45px;
   color: #499A18;
 }
 

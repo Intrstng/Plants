@@ -13,6 +13,17 @@
   align-self: center;
   gap: 39px;
 }
+///// Убрать ///////
+.service__buttons {
+  align-self: flex-start;
+  margin-top: 29px;
+}
+.service__button {
+  &:last-child {
+    padding-left: 6px;
+  }
+}
+////////////////////
 .cards {
   grid-template-columns: repeat(3, 330px);
   justify-content: center;

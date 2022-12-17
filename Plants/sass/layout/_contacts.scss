@@ -2,7 +2,7 @@
   padding-top: 52px;
   @include flex(flex, space-between, flex-start);
   & > h2 {
-    margin: 6px 0 0 65px;
+    margin: 8px 0 0 45px;
     color: $color-primary;
   }
 }

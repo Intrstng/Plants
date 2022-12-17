@@ -27,3 +27,9 @@
       color: $color-additional;
   }
 }
+
+// Убрать // (подгонка под макет)
+.nav-item:first-child {
+    margin-right: -4px;
+}
+/////////////////////////////////

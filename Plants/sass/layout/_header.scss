@@ -6,3 +6,8 @@
   max-width: $container-width;
   margin: 0 auto;
 }
+// Убрать
+.logo {
+  align-self: flex-start;
+  padding-top: 10px;
+}

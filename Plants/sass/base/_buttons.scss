@@ -26,6 +26,9 @@
 .prices__button {
   background-color: $color-light;
   z-index: 1;
+  // Убрать // (подгонка под макет)
+  padding-left: 6px;
+  ////////////
 }
 .accordion__button {
   flex-wrap: nowrap;
