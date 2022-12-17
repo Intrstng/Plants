@@ -1,27 +1,18 @@
 .footer__content {
     padding: 2.5rem 0 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 3.125rem;
+    @include flex();
+    @include font(('Inter', sans-serif), 1.25rem, 3.125rem);
 }
 .footer__copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
     gap: 1.25rem;
+    @include flex();
 }
 .social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 1.25rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    @include flex();
 }
 .social__link {
     & > img {
@@ -40,7 +31,7 @@
     vertical-align: middle;
 }
 .social__icon {
-    transition: all 0.3s ease;
+    @extend %transition;
 }
 .social__link_hover:hover .social__icon {
     transform: scale(1.15)

@@ -6,26 +6,19 @@
   background-color: $color-bground;
 }
 .adresses__content {
-  display: flex;
-  justify-content: flex-start;
   gap: 1.25rem;
   margin-bottom: 1.25rem;
+  @include flex($justify-content: flex-start);
 }
 .adresses__titles {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 2.5rem;
   letter-spacing: 0.05em;
   color: $color-black;
+  @include font(('Inter', sans-serif), 1rem, 2.5rem);
 }
 .adresses__info {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 2.5rem;
   letter-spacing: 0.05em;
   color: $color-titles;
+  @include font(('Inter', sans-serif), 1rem, 2.5rem);
 }
 .adresses-btn {
   text-align: center;

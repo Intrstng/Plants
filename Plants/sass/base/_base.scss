@@ -18,29 +18,17 @@ body {
   display: grid;
 }
 h1 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 2.8rem;
-  line-height: 3.125rem;
   color: $color-titles;
+  @include font(('Inter', sans-serif), 700, 2.8rem, 3.125rem);
 }
 h2 {
-  font-family: 'Inika', 'Verdana', sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  @include font(('Inika', 'Verdana', sans-serif), 2.5rem, 3.25rem);
 }
 h3 {
-  font-family: 'Inter', 'Verdana', sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.25rem;
+  @include font(('Inter', 'Verdana', sans-serif), 700, 1.25rem, 1.25rem);
 }
 h4 {
-  font-family: 'Inter', 'Verdana', sans-serif;
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3.125rem;
+  @include font(('Inter', 'Verdana', sans-serif), 700, 2.5rem, 3.125rem);
 }
 @font-face {
   font-family: 'Inika';

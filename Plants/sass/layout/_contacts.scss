@@ -1,11 +1,7 @@
 .contact__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding-top: 53px;
+  @include flex($align-items: flex-start);
 }
-
-
 .contact__content {
   & > h2 {
     margin: 6px 0 0 65px;
@@ -23,17 +19,12 @@
 }
 
 .city__dropdown {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 5px 35px 5px 20px;
-  & > p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2.5rem;    
+  @include flex();
+  & > p {  
     letter-spacing: 0.05em;
     color: $color-titles;
+    @include font(('Inter', sans-serif), 1.25rem, 2.5rem);
   }
 }
 

@@ -1,8 +1,6 @@
 .about__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 93px 0 94px;
+  @include flex($align-items: flex-start);
 }
 .about__card {
   max-width: 49.5%;
@@ -14,10 +12,7 @@
   color: $color-additional;
 }
   & > p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
     color: $color-text;
+    @include font(('Inter', sans-serif), 1.25rem, 1.875rem);
 }
 }

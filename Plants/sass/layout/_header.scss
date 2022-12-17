@@ -1,23 +1,18 @@
 .header__content {
-  display: flex;
   height: 134px;
-  justify-content: space-between;
-  align-items: center; 
+  @include flex();
 }
 .header__content {
   max-width: 1222px;
   margin: 0 auto;
 }
 .logo {
-  align-self:center
+  align-self: center;
 }
 .logo__link {
-  font-family: 'Inika', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.3rem;
   text-decoration: none;
   color: $color-black;
+  @include font(('Inika', sans-serif), 1rem, 1.3rem);
 }
 .nav {
   display: flex;
@@ -28,13 +23,10 @@
   gap: 47px;
 }
 .nav-link {
-  font-family:'Inika', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 3.125rem;
   letter-spacing: 0.1px;
   text-decoration: none;
   color: $color-links;
+  @include font(('Inika', sans-serif), 1rem, 3.125rem);
 }
 .nav-link_hover {
   transition: all 0.1s linear;

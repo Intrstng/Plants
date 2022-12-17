@@ -1,5 +1,5 @@
 .accordion__opened {
-                                          display: none;
+                                          //display: none;
   padding: 16px 40px 14px 40px;
   max-width: 250px;
   background-color: $color-menu;
@@ -10,19 +10,12 @@
   }
 }
 .accordion__button-opened {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 17px;
   position: relative;
+  @include flex();
   & > p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.25rem;
     color: $color-black;
-
+    @include font(('Inter', sans-serif), 700, 1.25rem, 1.25rem);
   }
   & :after {
     content: '';
@@ -48,44 +41,29 @@
 .panel__text {
                                                                   padding-right: 5px;
                                                                   margin-bottom: 6px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-size: 0.625rem;
-  line-height: 0.625rem;
   color: $color-titles;
+  @include font(('Inter', sans-serif), 300, 0.625rem, 0.625rem);
 }
 .panel__price {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
   margin-bottom: 10px;
+  @include font(('Inter', sans-serif), 0.75rem, 1.25rem);
   & > span {
     margin-right: 8px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.25rem;
     color: $color-additional;
+    @include font(('Inter', sans-serif), 700, 1rem, 1.25rem);
   }
   & > span:before {
     content: '\0024';
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
     color: $color-additional;
+    @include font(('Inter', sans-serif), 700, 0.75rem, 1.25rem);
   }
 }
 .panel__button {
   padding: 5px 27px 5px 20px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   text-decoration: none;
   color: $color-titles;
   background-color: $color-light;
   border-radius: 0.625rem;
+  @include font(('Inter', sans-serif), 700, 0.875rem, 1.25rem);
 }
 
