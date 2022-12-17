@@ -1,6 +1,6 @@
 .about__content {
   padding: 93px 0 94px;
-  @include flex($align-items: flex-start);
+  @include flex(flex, space-between, flex-start);
 }
 .about__card {
   max-width: 49.5%;
@@ -13,6 +13,6 @@
 }
   & > p {
     color: $color-text;
-    @include font(('Inter', sans-serif), 1.25rem, 1.875rem);
+    @include font(('Inter', sans-serif), 400, 1.25rem, 1.875rem);
 }
 }

@@ -1,18 +1,18 @@
 .footer__content {
     padding: 2.5rem 0 2.5rem;
-    @include flex();
-    @include font(('Inter', sans-serif), 1.25rem, 3.125rem);
+    @include flex(flex, space-between, center);
+    @include font(('Inter', sans-serif), 400, 1.25rem, 3.125rem);
 }
 .footer__copyright {
     gap: 1.25rem;
-    @include flex();
+    @include flex(flex, space-between, center);
 }
 .social {
     gap: 1.25rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    @include flex();
+    @include flex(flex, space-between, center);
 }
 .social__link {
     & > img {

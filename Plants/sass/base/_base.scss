@@ -22,7 +22,7 @@ h1 {
   @include font(('Inter', sans-serif), 700, 2.8rem, 3.125rem);
 }
 h2 {
-  @include font(('Inika', 'Verdana', sans-serif), 2.5rem, 3.25rem);
+  @include font(('Inika', 'Verdana', sans-serif), 400, 2.5rem, 3.25rem);
 }
 h3 {
   @include font(('Inter', 'Verdana', sans-serif), 700, 1.25rem, 1.25rem);

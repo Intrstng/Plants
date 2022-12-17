@@ -1,7 +1,7 @@
 .service__head {
   gap: 11.6%;
   padding-top: 40px;
-  @include flex($justify-content: left, $align-items: flex-start);
+  @include flex(flex, left, flex-start);
   & > h2 {
       max-width: 25%;
       color: $color-primary;
@@ -51,7 +51,7 @@
   margin-bottom: 35px;;
   text-align: center;
   color: $color-text;
-  @include font(('Inter', sans-serif), 1rem, 1.25rem);
+  @include font(('Inter', sans-serif), 400, 1rem, 1.25rem);
 }
 
 /* Hover - Cards items */

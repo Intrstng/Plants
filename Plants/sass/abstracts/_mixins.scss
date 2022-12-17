@@ -1,11 +1,11 @@
-@mixin font ($family, $weight: 400, $size, $height) {
+@mixin font ($family, $weight, $size, $height) {
   font-family: $family;
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
 }
 
-@mixin flex ($display: flex, $justify-content: space-between, $align-items: center) {
+@mixin flex ($display, $justify-content, $align-items) {
     display: $display;
     justify-content: $justify-content;
     align-items: $align-items;

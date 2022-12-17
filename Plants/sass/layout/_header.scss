@@ -1,6 +1,6 @@
 .header__content {
   height: 134px;
-  @include flex();
+  @include flex(flex, space-between, center);
 }
 .header__content {
   max-width: 1222px;
@@ -12,7 +12,7 @@
 .logo__link {
   text-decoration: none;
   color: $color-black;
-  @include font(('Inika', sans-serif), 1rem, 1.3rem);
+  @include font(('Inika', sans-serif), 400, 1rem, 1.3rem);
 }
 .nav {
   display: flex;
@@ -26,7 +26,7 @@
   letter-spacing: 0.1px;
   text-decoration: none;
   color: $color-links;
-  @include font(('Inika', sans-serif), 1rem, 3.125rem);
+  @include font(('Inika', sans-serif), 400, 1rem, 3.125rem);
 }
 .nav-link_hover {
   transition: all 0.1s linear;

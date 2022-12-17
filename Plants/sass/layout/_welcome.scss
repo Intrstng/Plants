@@ -1,6 +1,6 @@
 .welcome__content {
   padding: 52px 0 56px;
-  @include flex($align-items: flex-start);
+  @include flex(flex, space-between, flex-start);
 }
 .welcome__card {
   max-width: 45%;
@@ -16,7 +16,7 @@
         & > p {
           margin-bottom: 46px;
           color: $color-text;
-          @include font(('Inter', sans-serif), 1.25rem, 2.19rem);
+          @include font(('Inter', sans-serif), 400, 1.25rem, 2.19rem);
   }
 }
 .welcome__image {

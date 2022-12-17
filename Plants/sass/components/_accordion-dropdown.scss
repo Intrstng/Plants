@@ -1,5 +1,5 @@
 .accordion__opened {
-                                          //display: none;
+                                          display: none;
   padding: 16px 40px 14px 40px;
   max-width: 250px;
   background-color: $color-menu;
@@ -12,7 +12,7 @@
 .accordion__button-opened {
   margin-bottom: 17px;
   position: relative;
-  @include flex();
+  @include flex(flex, space-between, center);
   & > p {
     color: $color-black;
     @include font(('Inter', sans-serif), 700, 1.25rem, 1.25rem);
@@ -46,7 +46,7 @@
 }
 .panel__price {
   margin-bottom: 10px;
-  @include font(('Inter', sans-serif), 0.75rem, 1.25rem);
+  @include font(('Inter', sans-serif), 400, 0.75rem, 1.25rem);
   & > span {
     margin-right: 8px;
     color: $color-additional;

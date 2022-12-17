@@ -1,6 +1,6 @@
 .price__content {
     padding: 39px 0 129px;
-    @include flex($align-items: flex-start);
+    @include flex(flex, space-between, flex-start);
 }
 .prices-card {
     & > h2 {
@@ -16,31 +16,16 @@
     width: 332px;
     border: 1px solid $color-border;
     border-radius: 1.25rem;
-    @include flex($align-items: flex-start);
-}
-.accordion__button {
-    flex-wrap: nowrap;
-    padding: 15px 40px;
-    background-color: $color-bground;
-    border-radius: 1.25rem;
-    @include flex();
-    & > p {
-        @include font(('Inter', sans-serif), 700, 1.25rem, 1.25rem);
-    }
-}
-.accordion__dropdown-btn {
-    & > img {
-        display: inline-block;
-        vertical-align: middle;
-    }
+    @include flex(flex, space-between, flex-start);
 }
 .prices-contacts {
     flex-direction: column;
+    align-self: stretch;
     position: relative;
     max-width: 452px;
     color: $color-black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @include flex($justify-content: flex-start, $align-items: flex-end);
+    @include flex(flex, flex-start, flex-end);
     @include font(('Inter', sans-serif), 700, 2.5rem, 3rem);
     & > h4 {
         margin-bottom: 40px;

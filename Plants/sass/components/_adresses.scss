@@ -8,17 +8,17 @@
 .adresses__content {
   gap: 1.25rem;
   margin-bottom: 1.25rem;
-  @include flex($justify-content: flex-start);
+  @include flex(flex, flex-start, center);
 }
 .adresses__titles {
   letter-spacing: 0.05em;
   color: $color-black;
-  @include font(('Inter', sans-serif), 1rem, 2.5rem);
+  @include font(('Inter', sans-serif), 400, 1rem, 2.5rem);
 }
 .adresses__info {
   letter-spacing: 0.05em;
   color: $color-titles;
-  @include font(('Inter', sans-serif), 1rem, 2.5rem);
+  @include font(('Inter', sans-serif), 400, 1rem, 2.5rem);
 }
 .adresses-btn {
   text-align: center;

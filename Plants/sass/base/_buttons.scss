@@ -6,7 +6,7 @@
   border-radius: 5px;
   cursor: pointer;
   @extend %transition;
-  @include font(('Inika', sans-serif), 1.25rem, 1.625rem);
+  @include font(('Inika', sans-serif), 400, 1.25rem, 1.625rem);
 }
 .welcome__button {
   padding: 10px 27px;
@@ -16,7 +16,7 @@
   border-radius: 10px;
   cursor: pointer;
   @extend %transition;
-  @include font(('Inter', sans-serif), 1rem, 1.25rem);
+  @include font(('Inter', sans-serif), 400, 1rem, 1.25rem);
 }
 .service__button {
   background-color: $color-bground;
@@ -24,6 +24,23 @@
 .prices__button {
   background-color: $color-light;
   z-index: 1;
+}
+.accordion__button {
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 15px 40px;
+  background-color: $color-bground;
+  border-radius: 1.25rem;
+  @include flex(flex, space-between, center);
+  & > p {
+      @include font(('Inter', sans-serif), 700, 1.25rem, 1.25rem);
+  }
+}
+.accordion__dropdown-btn {
+  & > img {
+      display: inline-block;
+      vertical-align: middle;
+  }
 }
 .adresses__button {
   padding: 7px 42px;

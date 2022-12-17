@@ -4,7 +4,7 @@
     height: 100%;
     padding: 30px 35px 15px 40px;
     background-color: $color-menu-body-active;
-    @include flex($align-items: flex-start);
+    @include flex(flex, space-between, flex-start);
     & > a {
         display: inline-block;
         margin-bottom: 7px;
@@ -13,7 +13,7 @@
         color: $color-primary;
         transition: all 0.3s linear;
         position: relative;
-        @include font(('Inter', sans-serif), 1rem, 2.5rem);
+        @include font(('Inter', sans-serif), 400, 1rem, 2.5rem);
       }
       & > a:after {
         content: '';

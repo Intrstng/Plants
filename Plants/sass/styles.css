@@ -1,4 +1,8 @@
 @import "../node_modules/normalize.css/normalize.css";
+.social__icon, .adresses__button, .welcome__button, .button {
+  transition: all 0.3s ease;
+}
+
 *,
 *::before,
 *::after {
@@ -85,7 +89,6 @@ h4 {
   border: 1px solid #E06733;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-family: "Inika", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
@@ -99,7 +102,6 @@ h4 {
   background-color: #EDF2EC;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -115,6 +117,28 @@ h4 {
   z-index: 1;
 }
 
+.accordion__button {
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 15px 40px;
+  background-color: #EDF2EC;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__button > p {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.accordion__dropdown-btn > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .adresses__button {
   padding: 7px 42px;
   text-align: center;
@@ -123,7 +147,6 @@ h4 {
   color: #717171;
   border: 1px solid #E06733;
   border-radius: 0.31rem;
-  transition: all 0.3s ease;
   font-family: "Inika", sans-serif;
   font-weight: 700;
   font-size: 0.625rem;
@@ -194,16 +217,14 @@ h4 {
 }
 
 .city__dropdown-content {
-  display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
   padding: 30px 35px 15px 40px;
   background-color: #DCE9D9;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .city__dropdown-content > a {
   display: inline-block;
@@ -249,7 +270,6 @@ h4 {
 }
 
 .accordion__button-opened {
-  display: flex;
   margin-bottom: 17px;
   position: relative;
   display: flex;
@@ -257,11 +277,11 @@ h4 {
   align-items: center;
 }
 .accordion__button-opened > p {
+  color: #000000;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
-  color: #000000;
 }
 .accordion__button-opened :after {
   content: "";
@@ -453,7 +473,7 @@ h4 {
   padding-top: 40px;
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: flex-start;
 }
 .service__head > h2 {
   max-width: 25%;
@@ -548,7 +568,7 @@ h4 {
   padding: 39px 0 129px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .prices-card > h2 {
@@ -569,32 +589,12 @@ h4 {
   border-radius: 1.25rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.accordion__button {
-  flex-wrap: nowrap;
-  padding: 15px 40px;
-  background-color: #EDF2EC;
-  border-radius: 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.accordion__button > p {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-}
-
-.accordion__dropdown-btn > img {
-  display: inline-block;
-  vertical-align: middle;
+  align-items: flex-start;
 }
 
 .prices-contacts {
   flex-direction: column;
+  align-self: stretch;
   position: relative;
   max-width: 452px;
   color: #000000;
@@ -621,9 +621,6 @@ h4 {
 }
 
 .contact__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding-top: 53px;
   display: flex;
   justify-content: space-between;
@@ -669,6 +666,10 @@ h4 {
 .city__dropdown-content {
   display: none;
 }
+.city__dropdown-content > a {
+  display: inline-block;
+  width: 100%;
+}
 
 .footer__content {
   padding: 2.5rem 0 2.5rem;
@@ -713,10 +714,6 @@ h4 {
   width: 4rem;
   display: inline-block;
   vertical-align: middle;
-}
-
-.social__icon {
-  transition: all 0.3s ease;
 }
 
 .social__link_hover:hover .social__icon {
