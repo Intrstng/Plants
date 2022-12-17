@@ -16,7 +16,7 @@
         & > p {
           margin-bottom: 46px;
           color: $color-text;
-          @include font(('Inter', sans-serif), 400, 1.25rem, 2.19rem);
+          @include font('@extend %font-add', 400, 1.25rem, 2.19rem);
   }
 }
 .welcome__image {

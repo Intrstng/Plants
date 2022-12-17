@@ -45,13 +45,13 @@
   margin: 7px 0 14px;
   text-align: center;
   color: $color-additional;
-  @include font(('Inter', sans-serif), 700, 1.25rem, 1.25rem);
+  @include font('@extend %font-add', 700, 1.25rem, 1.25rem);
 }
 .cards-text {
   margin-bottom: 35px;;
   text-align: center;
   color: $color-text;
-  @include font(('Inter', sans-serif), 400, 1rem, 1.25rem);
+  @include font('@extend %font-add', 400, 1rem, 1.25rem);
 }
 
 /* Hover - Cards items */

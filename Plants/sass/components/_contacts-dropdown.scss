@@ -13,7 +13,7 @@
         color: $color-primary;
         transition: all 0.3s linear;
         position: relative;
-        @include font(('Inter', sans-serif), 400, 1rem, 2.5rem);
+        @include font('@extend %font-add', 400, 1rem, 2.5rem);
       }
       & > a:after {
         content: '';

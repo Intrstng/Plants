@@ -17,7 +17,7 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Inika", "Verdana", sans-serif;
+  font-family: "@extend %font-primary";
   font-size: 1rem;
 }
 
@@ -27,28 +27,28 @@ body {
 
 h1 {
   color: #717171;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.125rem;
 }
 
 h2 {
-  font-family: "Inika", "Verdana", sans-serif;
+  font-family: "@extend %font-primary";
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 3.25rem;
 }
 
 h3 {
-  font-family: "Inter", "Verdana", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
 }
 
 h4 {
-  font-family: "Inter", "Verdana", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.125rem;
@@ -70,14 +70,14 @@ h4 {
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../fonts/Inter-Regular.ttf");
+  src: url("../../fonts/@extend %font-add-Regular.ttf");
   src: local("Inter");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../fonts/Inter-Bold.ttf");
+  src: url("../../fonts/@extend %font-add-Bold.ttf");
   src: local("Inter");
   font-style: normal;
   font-weight: 700;
@@ -88,8 +88,8 @@ h4 {
   color: #E06733;
   border: 1px solid #E06733;
   border-radius: 5px;
-  cursor: pointer;
-  font-family: "Inika", sans-serif;
+  cursor: "po@extend %font-add";
+  font-family: "@extend %font-primary";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.625rem;
@@ -102,7 +102,7 @@ h4 {
   background-color: #EDF2EC;
   border-radius: 10px;
   cursor: pointer;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -128,7 +128,7 @@ h4 {
   align-items: center;
 }
 .accordion__button > p {
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -147,7 +147,7 @@ h4 {
   color: #717171;
   border: 1px solid #E06733;
   border-radius: 0.31rem;
-  font-family: "Inika", sans-serif;
+  font-family: "@extend %font-primary";
   font-weight: 700;
   font-size: 0.625rem;
   line-height: 0.81rem;
@@ -197,7 +197,7 @@ h4 {
 .adresses__titles {
   letter-spacing: 0.05em;
   color: #000000;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 2.5rem;
@@ -206,7 +206,7 @@ h4 {
 .adresses__info {
   letter-spacing: 0.05em;
   color: #717171;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 2.5rem;
@@ -234,7 +234,7 @@ h4 {
   color: #499A18;
   transition: all 0.3s linear;
   position: relative;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 2.5rem;
@@ -278,7 +278,7 @@ h4 {
 }
 .accordion__button-opened > p {
   color: #000000;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -303,7 +303,7 @@ h4 {
   padding-right: 5px;
   margin-bottom: 6px;
   color: #717171;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 300;
   font-size: 0.625rem;
   line-height: 0.625rem;
@@ -311,7 +311,7 @@ h4 {
 
 .panel__price {
   margin-bottom: 10px;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.25rem;
@@ -319,7 +319,7 @@ h4 {
 .panel__price > span {
   margin-right: 8px;
   color: #E06733;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -327,7 +327,7 @@ h4 {
 .panel__price > span:before {
   content: "$";
   color: #E06733;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1.25rem;
@@ -339,7 +339,7 @@ h4 {
   color: #717171;
   background-color: #FFFFFF;
   border-radius: 0.625rem;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -369,7 +369,7 @@ h4 {
 .logo__link {
   text-decoration: none;
   color: #000000;
-  font-family: "Inika", sans-serif;
+  font-family: "@extend %font-primary";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.3rem;
@@ -388,7 +388,7 @@ h4 {
   letter-spacing: 0.1px;
   text-decoration: none;
   color: #010201;
-  font-family: "Inika", sans-serif;
+  font-family: "@extend %font-primary";
   font-weight: 400;
   font-size: 1rem;
   line-height: 3.125rem;
@@ -431,7 +431,7 @@ h4 {
 .welcome__card > p {
   margin-bottom: 46px;
   color: #636060;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 2.19rem;
@@ -462,7 +462,7 @@ h4 {
 }
 .about__card > p {
   color: #636060;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -524,7 +524,7 @@ h4 {
   margin: 7px 0 14px;
   text-align: center;
   color: #E06733;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -534,7 +534,7 @@ h4 {
   margin-bottom: 35px;
   text-align: center;
   color: #636060;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -574,7 +574,7 @@ h4 {
 .prices-card > h2 {
   margin-bottom: 60px;
   color: #000000;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3rem;
@@ -602,7 +602,7 @@ h4 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3rem;
@@ -652,7 +652,7 @@ h4 {
 .city__dropdown > p {
   letter-spacing: 0.05em;
   color: #717171;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 2.5rem;
@@ -676,7 +676,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Inter", sans-serif;
+  font-family: "@extend %font-add";
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 3.125rem;

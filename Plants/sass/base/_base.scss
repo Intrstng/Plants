@@ -11,7 +11,7 @@ html {
 body {
   max-width: $page-width;
   margin: 0 auto;
-  font-family: 'Inika', 'Verdana', sans-serif;
+  font-family: '@extend %font-primary';
   font-size: 1rem;
 }
 .grid {
@@ -19,16 +19,16 @@ body {
 }
 h1 {
   color: $color-titles;
-  @include font(('Inter', sans-serif), 700, 2.8rem, 3.125rem);
+  @include font(('@extend %font-add'), 700, 2.8rem, 3.125rem);
 }
 h2 {
-  @include font(('Inika', 'Verdana', sans-serif), 400, 2.5rem, 3.25rem);
+  @include font(('@extend %font-primary'), 400, 2.5rem, 3.25rem);
 }
 h3 {
-  @include font(('Inter', 'Verdana', sans-serif), 700, 1.25rem, 1.25rem);
+  @include font(('@extend %font-add'), 700, 1.25rem, 1.25rem);
 }
 h4 {
-  @include font(('Inter', 'Verdana', sans-serif), 700, 2.5rem, 3.125rem);
+  @include font(('@extend %font-add'), 700, 2.5rem, 3.125rem);
 }
 @font-face {
   font-family: 'Inika';
@@ -46,14 +46,14 @@ h4 {
 }
 @font-face {
   font-family: 'Inter';
-  src: url('../../fonts/Inter-Regular.ttf');
+  src: url('../../fonts/@extend %font-add-Regular.ttf');
   src: local('Inter');
   font-style: normal; 
   font-weight: 400; 
 }
 @font-face {
   font-family: 'Inter';
-  src: url('../../fonts/Inter-Bold.ttf');
+  src: url('../../fonts/@extend %font-add-Bold.ttf');
   src: local('Inter');
   font-style: normal; 
   font-weight: 700; 

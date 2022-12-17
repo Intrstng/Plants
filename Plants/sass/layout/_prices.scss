@@ -6,7 +6,7 @@
     & > h2 {
         margin-bottom: 60px;
         color: $color-black;
-        @include font(('Inter', sans-serif), 700, 2.5rem, 3rem);
+        @include font('@extend %font-add', 700, 2.5rem, 3rem);
     }
 }
 .accordion {
@@ -26,7 +26,7 @@
     color: $color-black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     @include flex(flex, flex-start, flex-end);
-    @include font(('Inter', sans-serif), 700, 2.5rem, 3rem);
+    @include font('@extend %font-add', 700, 2.5rem, 3rem);
     & > h4 {
         margin-bottom: 40px;
     }
