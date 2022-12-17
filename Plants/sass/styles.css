@@ -370,6 +370,12 @@ h4 {
   margin: 0 auto;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 962px;
+  }
+}
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -378,8 +384,6 @@ h4 {
 
 .header__content {
   padding: 43px 0 41px;
-  max-width: 1222px;
-  margin: 0 auto;
 }
 
 .logo {

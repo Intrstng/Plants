@@ -1,4 +1,17 @@
 .container {
     max-width: $container-width;
     margin: 0 auto;
+    // @include media-laptop {
+    //     padding: 0 50px;
+    // }
 }
+
+
+    
+.container {
+        @include media-laptop {
+        //padding: 0 350px;
+        max-width: 962px;
+    }
+    }
+ 
