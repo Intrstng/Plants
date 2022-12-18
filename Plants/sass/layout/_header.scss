@@ -1,7 +1,8 @@
 .header__content {
   @include flex(flex, space-between, center);
-}
-.header__content {
+  @include media-tablet {
+    padding: 36px 0 31px;
+  }
   padding: 43px 0 41px;
 }
 // Убрать

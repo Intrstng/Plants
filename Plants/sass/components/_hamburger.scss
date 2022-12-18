@@ -1,0 +1,71 @@
+.hamburger {
+  @include media-mobile {
+    display: flex;
+  }
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  width: 40px;
+  height: 26px;
+  @extend %transition;
+  &:hover {
+    transform: scale(1.15);
+    & .hamburger__line {
+      border-color: $color-additional;
+      &:before,
+      &:after {
+        background-color: $color-additional;
+      }
+    }
+  }
+  &:active {
+    & .hamburger__line {
+      border-color: $color-primary;
+      &:before,
+      &:after {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+.hamburger__line {
+  width: 40px;
+  height: 10px;
+  border-top: 2px solid $color-titles;
+  border-bottom: 2px solid $color-titles;
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 2px;
+    background-color: $color-titles;
+  }
+  &:before {
+    top: -10px;
+  }
+  &:after {
+    bottom: -10px;
+  }
+}
+
+// Добавить как класс к hamburger__line в открытом состояния гамбургер-меню
+.hamburger__line_opened {
+  height: 2px;
+  border-top: none;
+  transform: rotate(45deg);
+  &:before,
+  &:after {
+    top: 0;
+    background-color: $color-additional;
+  }
+  &:before {
+    transform: rotate(0);
+  }
+  &:after{
+    transform: rotate(90deg);
+  }
+}

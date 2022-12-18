@@ -1,43 +1,62 @@
 .footer__content {
-    padding: 2.5rem 0 2.5rem;
-    @include flex(flex, space-between, center);
-    @extend %font-add;
-    @include font(400, 1.25rem, 3.125rem);
+  padding: 2.5rem 0 2.5rem;
+  @include flex(flex, space-between, center);
+  flex-flow: wrap;
+  @extend %font-add;
+  @include font(400, 1.25rem, 3.125rem);
+  @include media-responsive {
+    flex-direction: column;
+    @include font(400, 1.25rem, 2rem);
+    justify-content: flex-start;
+    padding: 1.25rem 0 1.75rem;
+  }
 }
 .footer__copyright {
-    gap: 1.25rem;
-    @include flex(flex, space-between, center);
+  gap: 1.25rem;
+  @include flex(flex, space-between, center);
+  @include media-responsive {
+    margin: 0.56rem 0 0.5rem;
+  }
 }
 .social {
-    gap: 1.25rem;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    @include flex(flex, space-between, center);
+  gap: 1.25rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  @include flex(flex, space-between, center);
+  @include media-laptop {
+    gap: 0.8rem;
+  }
 }
 .social__link {
-    & > img {
-        display: inline-block;
-        vertical-align: middle;
-    }
+  & > img {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 .logo-rs {
-    padding-left: 11.69rem;
+  padding-left: 11.69rem;
+  @include media-laptop {
+    padding-left: 0;
+  }
+  @include media-responsive {
+    margin-bottom: 1.19rem;
+  }
 }
 .rs-img,
 .git-img {
-    height: 2rem;
-    width: 4rem;
-    display: inline-block;
-    vertical-align: middle;
+  height: 2rem;
+  width: 4rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 .social__icon {
-    @extend %transition;
+  @extend %transition;
 }
 .social__link {
-    &_hover {
-        &:hover .social__icon {
-            transform: scale(1.15);
-        }
+  &_hover {
+    &:hover .social__icon {
+      transform: scale(1.15);
     }
+  }
 }

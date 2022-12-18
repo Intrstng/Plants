@@ -1,17 +1,7 @@
 .container {
-    max-width: $container-width;
-    margin: 0 auto;
-    // @include media-laptop {
-    //     padding: 0 50px;
-    // }
+  max-width: $container-width;
+  margin: 0 auto;
+  @include media-laptop {
+    margin: 0 50px; // Перепроверить
+    }
 }
-
-
-    
-.container {
-        @include media-laptop {
-        //padding: 0 350px;
-        max-width: 962px;
-    }
-    }
- 

@@ -8,6 +8,9 @@
     width: 95%;
     margin: 69px 0 38px;
     color: $color-primary;
+    @include media-responsive {
+      margin-top: 0px;
+    }
 }
   & span {
   color: $color-additional;
@@ -17,4 +20,7 @@
     @extend %font-add;
     @include font(400, 1.25rem, 1.875rem);
 }
+}
+.about__image {
+  max-width: 50%;
 }

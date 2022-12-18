@@ -2,13 +2,14 @@
   gap: 11.6%;
   padding-top: 40px;
   @include flex(flex, left, flex-start);
+  flex-flow: wrap;
   & > h2 {
-      max-width: 25%;
+      flex-basis: 306px;
       color: $color-primary;
   }
 }
 .service__buttons {
-  max-width: 75%;
+  flex-basis: 559px;
   display: flex;
   align-self: center;
   gap: 39px;
@@ -31,6 +32,16 @@
   row-gap: 55px;
   padding: 80px 0 120px;
   position: relative;
+  @include media-laptop {
+    grid-template-columns: repeat(3, 280px);
+    column-gap: 3%;
+    row-gap: 2.5%;
+  }
+  @include media-responsive {
+    grid-template-columns: repeat(2, 280px);
+    column-gap: 16%;
+    row-gap: 5.7%;
+  }
 }
 .cards__item {
   border: 1px solid $color-border;

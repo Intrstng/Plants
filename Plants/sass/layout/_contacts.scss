@@ -4,20 +4,26 @@
   & > h2 {
     margin: 8px 0 0 45px;
     color: $color-primary;
+    @include media-laptop {
+      margin-left: 0px;
+    }
   }
+}
+.contact__employee-image {
+  max-width: 35%;
 }
 .city {
   width: 450px;
+  @include media-laptop {
+    width: 310px; 
+  }
 }
 .city__dropdown {
   width: 100%;
   margin-top: 95px;
+  padding: 5px 35px 5px 20px;
   background-color: $color-menu;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.city__dropdown {
-  padding: 5px 35px 5px 20px;
   @include flex(flex, space-between, center);
   & > p {  
     letter-spacing: 0.05em;
@@ -33,7 +39,7 @@
   }
 }
 .city__dropdown-content {
-                                                                     display: none;
+                                                              //       display: none;
   & > a {
     display: inline-block;
     width: 100%;

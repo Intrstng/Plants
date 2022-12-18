@@ -1,4 +1,5 @@
 .adresses {
+                                                        display: none;
   padding: 18px 34px 35px;
   max-width: 448px;
   border: 1px solid $color-black;
@@ -9,6 +10,9 @@
   gap: 1.25rem;
   margin-bottom: 1.25rem;
   @include flex(flex, flex-start, center);
+}
+.adresses__position {
+  margin-top: 48px;
 }
 .adresses__titles {
   letter-spacing: 0.05em;
