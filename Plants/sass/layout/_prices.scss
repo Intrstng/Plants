@@ -1,6 +1,9 @@
 .price__content {
   padding: 39px 0 129px;
   @include flex(flex, space-between, flex-start);
+  @include media-tablet {
+    padding: 41px 0 100px;
+  }
 }
 .prices__card {
   & > h2 {
@@ -8,16 +11,11 @@
       color: $color-black;
       @extend %font-add;
       @include font(700, 2.5rem, 3rem);
+      @include media-tablet {
+        @include font(700, 2.18rem, 2.62rem);
+        margin: 0 0 56px 16px;
+      }
   }
-}
-.accordion {
-  gap: 32px;
-  flex-direction: column;
-  padding: 33px 40px 34px;
-  width: 332px;
-  border: 1px solid $color-border;
-  border-radius: 1.25rem;
-  @include flex(flex, space-between, flex-start);
 }
 .prices-contacts {
   flex-direction: column;
@@ -32,6 +30,9 @@
   & > h4 {
       text-align: right;
       margin-bottom: 39px;
+      @include media-tablet {
+        margin: 99px 0 28px;
+      }
   }
   & span {
       color: $color-primary;

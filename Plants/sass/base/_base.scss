@@ -39,4 +39,7 @@ h3 {
 h4 {
   @extend %font-add;
   @include font(700, 2.5rem, 3.125rem);
+  @include media-tablet {
+    @include font(700, 1.56rem, 2.18rem);
+  }
 }

@@ -32,6 +32,9 @@
   // Убрать // (подгонка под макет)
   padding-left: 6px;
   ////////////
+  @include media-tablet {
+    padding: 11px 12px 11px 6px;
+  }
 }
 .accordion__button {
   flex-wrap: nowrap;

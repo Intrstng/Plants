@@ -1,21 +1,40 @@
 .contact__content {
   padding-top: 52px;
   @include flex(flex, space-between, flex-start);
+  @include media-responsive {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 41px;
+  }
   & > h2 {
     margin: 7px 0 0 45px;
     color: $color-primary;
     @include media-laptop {
       margin-left: 0px;
     }
+    @include media-responsive {
+      @include font(700, 2.5rem, 3.25rem);
+      margin: 0 0 98px;
+    }
   }
 }
-.contact__employee-image {
+.contact__image-block {
   max-width: 35%;
+  font-size: 0;
+  @include media-responsive {
+    order: 3;
+    max-width: 100%;
+    margin-left: 20px;
+  }
 }
 .city {
   width: 450px;
   @include media-laptop {
     width: 310px; 
+  }
+  @include media-responsive {
+    width: 450px;
+    order: 2;
   }
 }
 .city__dropdown {
@@ -25,6 +44,9 @@
   background-color: $color-menu;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   @include flex(flex, space-between, center);
+  @include media-responsive {
+    margin: 0 0 251px;
+  }
   & > p {  
     letter-spacing: 0.05em;
     color: $color-titles;
@@ -39,7 +61,7 @@
   }
 }
 .city__dropdown-content {
-                                                              //       display: none;
+                                                                     display: none;
   & > a {
     display: inline-block;
     width: 100%;

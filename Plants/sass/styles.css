@@ -72,6 +72,13 @@ h4 {
   font-size: 2.5rem;
   line-height: 3.125rem;
 }
+@media (max-width: 768px) {
+  h4 {
+    font-weight: 700;
+    font-size: 1.56rem;
+    line-height: 2.18rem;
+  }
+}
 
 .button {
   padding: 12px;
@@ -110,6 +117,11 @@ h4 {
   background-color: #FFFFFF;
   z-index: 1;
   padding-left: 6px;
+}
+@media (max-width: 768px) {
+  .prices__button {
+    padding: 11px 12px 11px 6px;
+  }
 }
 
 .accordion__button {
@@ -318,6 +330,11 @@ h4 {
 .adresses__position {
   margin-top: 48px;
 }
+@media (max-width: 1000px) {
+  .adresses__position {
+    margin-top: 61px;
+  }
+}
 
 .adresses__titles {
   letter-spacing: 0.05em;
@@ -377,6 +394,23 @@ h4 {
 }
 .city__dropdown-content > a:hover:after {
   background-color: #717171;
+}
+
+.accordion {
+  gap: 32px;
+  flex-direction: column;
+  padding: 33px 40px 34px;
+  width: 332px;
+  border: 1px solid #E3E1D5;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 1000px) {
+  .accordion {
+    margin-bottom: 62px;
+  }
 }
 
 .accordion__opened {
@@ -559,7 +593,7 @@ h4 {
 }
 
 .about__content {
-  padding: 93px 0 94px;
+  padding: 93px 0 90px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -593,6 +627,11 @@ h4 {
     width: 425px;
   }
 }
+@media (max-width: 767px) {
+  .about__card > h2 {
+    margin-left: 0;
+  }
+}
 .about__card span {
   color: #E06733;
 }
@@ -610,17 +649,13 @@ h4 {
 }
 
 .about__image {
-  max-width: 50%;
-}
-@media (max-width: 768px) {
-  .about__image {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 
 .service__head {
   gap: 11.6%;
   padding-top: 40px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: left;
   align-items: flex-start;
@@ -660,7 +695,7 @@ h4 {
   -moz-column-gap: 9.5%;
        column-gap: 9.5%;
   row-gap: 55px;
-  padding: 80px 0 122px;
+  padding-bottom: 122px;
   position: relative;
 }
 @media (max-width: 1279px) {
@@ -717,7 +752,7 @@ h4 {
 }
 @media (max-width: 1279px) {
   .cards-title {
-    margin-bottom: 9px;
+    margin: 6px 0 10px;
   }
 }
 
@@ -761,6 +796,11 @@ h4 {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 768px) {
+  .price__content {
+    padding: 41px 0 100px;
+  }
+}
 
 .prices__card > h2 {
   margin-bottom: 60px;
@@ -769,17 +809,13 @@ h4 {
   font-size: 2.5rem;
   line-height: 3rem;
 }
-
-.accordion {
-  gap: 32px;
-  flex-direction: column;
-  padding: 33px 40px 34px;
-  width: 332px;
-  border: 1px solid #E3E1D5;
-  border-radius: 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+@media (max-width: 768px) {
+  .prices__card > h2 {
+    font-weight: 700;
+    font-size: 2.18rem;
+    line-height: 2.62rem;
+    margin: 0 0 56px 16px;
+  }
 }
 
 .prices-contacts {
@@ -800,6 +836,11 @@ h4 {
   text-align: right;
   margin-bottom: 39px;
 }
+@media (max-width: 768px) {
+  .prices-contacts > h4 {
+    margin: 99px 0 28px;
+  }
+}
 .prices-contacts span {
   color: #499A18;
 }
@@ -816,6 +857,13 @@ h4 {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 1000px) {
+  .contact__content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 41px;
+  }
+}
 .contact__content > h2 {
   margin: 7px 0 0 45px;
   color: #499A18;
@@ -825,9 +873,25 @@ h4 {
     margin-left: 0px;
   }
 }
+@media (max-width: 1000px) {
+  .contact__content > h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    margin: 0 0 98px;
+  }
+}
 
-.contact__employee-image {
+.contact__image-block {
   max-width: 35%;
+  font-size: 0;
+}
+@media (max-width: 1000px) {
+  .contact__image-block {
+    order: 3;
+    max-width: 100%;
+    margin-left: 20px;
+  }
 }
 
 .city {
@@ -836,6 +900,12 @@ h4 {
 @media (max-width: 1279px) {
   .city {
     width: 310px;
+  }
+}
+@media (max-width: 1000px) {
+  .city {
+    width: 450px;
+    order: 2;
   }
 }
 
@@ -848,6 +918,11 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1000px) {
+  .city__dropdown {
+    margin: 0 0 251px;
+  }
 }
 .city__dropdown > p {
   letter-spacing: 0.05em;
@@ -862,6 +937,9 @@ h4 {
   vertical-align: middle;
 }
 
+.city__dropdown-content {
+  display: none;
+}
 .city__dropdown-content > a {
   display: inline-block;
   width: 100%;
@@ -897,6 +975,7 @@ h4 {
 @media (max-width: 1000px) {
   .footer__copyright {
     margin: 0.56rem 0 0.5rem;
+    gap: 1.6rem;
   }
 }
 

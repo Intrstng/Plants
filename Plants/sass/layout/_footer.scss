@@ -16,6 +16,7 @@
   @include flex(flex, space-between, center);
   @include media-responsive {
     margin: 0.56rem 0 0.5rem;
+    gap: 1.6rem;
   }
 }
 .social {

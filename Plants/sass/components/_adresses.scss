@@ -13,6 +13,9 @@
 }
 .adresses__position {
   margin-top: 48px;
+  @include media-responsive {
+    margin-top: 61px;
+  }
 }
 .adresses__titles {
   letter-spacing: 0.05em;

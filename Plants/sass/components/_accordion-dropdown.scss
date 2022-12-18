@@ -1,3 +1,15 @@
+.accordion {
+  gap: 32px;
+  flex-direction: column;
+  padding: 33px 40px 34px;
+  width: 332px;
+  border: 1px solid $color-border;
+  border-radius: 1.25rem;
+  @include flex(flex, space-between, flex-start);
+  @include media-responsive {
+    margin-bottom: 62px;
+  }
+}
 .accordion__opened {
                                           display: none;
   padding: 16px 40px 14px 40px;
