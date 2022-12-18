@@ -19,6 +19,9 @@
   @extend %transition;
   @extend %font-add;
   @include font(400, 1rem, 1.25rem);
+  @include media-responsive {
+    word-spacing: -4px;
+  }
 }
 .service__button {
   background-color: $color-bground;

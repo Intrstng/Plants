@@ -1,14 +1,39 @@
 .welcome__content {
   padding: 52px 0 56px;
   @include flex(flex, space-between, flex-start);
+  @include media-responsive {
+    padding: 32px 0 70px;
+  }
+}
+.welcome__image-block {
+  @include media-responsive {
+    order: 2;
+  }
+}
+.welcome__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  @include media-responsive {
+    max-width: 100%;
+  }
 }
 .welcome__card {
   max-width: 45%;
   padding-right: 5px;
+  @include media-responsive {
+    max-width: 345px;
+  }
 }
 .welcome__card {
   & > h1 {
       margin: 46px 0 45px;
+      @include media-responsive {
+        max-width: 345px;
+        order: 1;
+        margin: 0px 0px 30px;
+        padding-top: 8px;
+      }
   }
   & span {
     color: $color-primary;
@@ -18,10 +43,10 @@
     color: $color-text;
     @extend %font-add;
     @include font(400, 1.25rem, 2.19rem);
+    @include media-responsive {
+      @include font(400, 1rem, 1.56rem);
+      padding-left: 6px;
+      margin-bottom: 36px;
+    }
   }
-}
-.welcome__image {
-  display: block;
-  max-width: 50%;
-  height: auto;
 }

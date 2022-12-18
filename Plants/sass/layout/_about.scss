@@ -1,16 +1,28 @@
 .about__content {
   padding: 93px 0 94px;
   @include flex(flex, space-between, flex-start);
+  @include media-tablet {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0 91px;
+  }
 }
 .about__card {
   max-width: 49.5%;
+  @include media-tablet {
+    max-width: 668px;
+  }
   & > h2 {
     width: 95%;
     margin: 69px 0 38px;
     color: $color-primary;
-    @include media-responsive {
-      margin-top: 0px;
+    @include media-tablet {
+      margin: 0 0 50px 120px;
+      text-align: center;
+      width: 425px;
     }
+    
 }
   & span {
   color: $color-additional;
@@ -19,8 +31,15 @@
     color: $color-text;
     @extend %font-add;
     @include font(400, 1.25rem, 1.875rem);
+    @include media-tablet {
+      max-width: 668px;
+      margin-bottom: 68px;
+    }
 }
 }
 .about__image {
   max-width: 50%;
+  @include media-tablet {
+    max-width: 100%;
+  }
 }

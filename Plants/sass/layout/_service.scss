@@ -7,6 +7,11 @@
       flex-basis: 306px;
       color: $color-primary;
   }
+  @include media-tablet {
+    padding-top: 60px;
+    margin-bottom: 38px;
+    gap: 12px;
+  }
 }
 .service__buttons {
   flex-basis: 559px;
@@ -30,26 +35,32 @@
   justify-content: center;
   column-gap: 9.5%;
   row-gap: 55px;
-  padding: 80px 0 120px;
+  padding: 80px 0 122px;
   position: relative;
   @include media-laptop {
     grid-template-columns: repeat(3, 280px);
     column-gap: 3%;
-    row-gap: 2.5%;
+    row-gap: 25px;
   }
   @include media-responsive {
     grid-template-columns: repeat(2, 280px);
     column-gap: 16%;
-    row-gap: 5.7%;
+    row-gap: 38px;
+  }
+  @include media-tablet {
+    padding-bottom: 71px;
   }
 }
 .cards__item {
+  height: 450px;
   border: 1px solid $color-border;
   background-color: $color-bground;
   overflow: hidden;
   text-decoration: none;
   border-radius: 1.25rem;
   position: relative;
+  & figure {
+    margin: 0;
 }
 .cards-img {
   display: inline-block;
@@ -60,10 +71,6 @@
   background-position: center;
   transition: transform 0.8s ease;
 }
-.cards__item {
-  & figure {
-    margin: 0;
-}
 }
 .cards-title {
   margin: 7px 0 14px;
@@ -71,13 +78,20 @@
   color: $color-additional;
   @extend %font-add;
   @include font(700, 1.25rem, 1.25rem);
+  @include media-laptop {
+    margin-bottom: 9px;
+  }
 }
 .cards-text {
-  margin-bottom: 35px;;
   text-align: center;
   color: $color-text;
   @extend %font-add;
   @include font(400, 1rem, 1.25rem);
+  @include media-laptop {
+    width: 205px;
+    margin-left: 36px;
+    word-spacing: 1px;
+  }
 }
 
 /* Hover - Cards items */
@@ -126,7 +140,7 @@
 
 /* Blur Cards items */
 // add and remove this class
-.cards__item_blured {
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-}
+// .cards__item_blured {
+//   filter: blur(2px);
+//   -webkit-filter: blur(2px);
+// }

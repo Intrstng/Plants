@@ -41,7 +41,11 @@
 ======================== -->
 <section class="welcome" aria-label="welcome section" id="welcome">
   <div class="welcome__content container">
-  <img class="welcome__image" src="./images/leafs.png" alt="leafs">
+  <!-- <img class="welcome__image" src="./images/leafs.png" alt="leafs"> -->
+  <picture class="welcome__image-block">
+    <source srcset="./images/responsive_images/leafs.png" media="(max-width: 1000px)">
+    <img class="welcome__image" src="./images/leafs.png" alt="leafs">
+  </picture>
     <div class="welcome__card">
         <h1 class="welcome__title">We grow <span>plants</span> and give you oxygen</h1>
           <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -58,15 +62,19 @@
     <h2 class="about__subtitle">We are <span>professional experienced</span> gardeners</h2>
       <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
   </div>
-    <img class="about__image" src="./images/houseplant_1.png" alt="houseplant">
+    <!-- <img class="about__image" src="./images/houseplant_1.png" alt="houseplant"> -->
+    <picture class="about__image-block">
+      <source srcset="./images/responsive_images/houseplant_1.png" media="(max-width: 768px)">
+      <img class="about__image" src="./images/houseplant_1.png" alt="houseplant">
+    </picture>
   </div>
 </section>
 
 <!-- Service
 ======================== -->
 <section class="service" aria-label="service and our projects section" id="service">
-  <div class="service__content container">
-    <div class="service__head">
+  <div class="service__content">
+    <div class="service__head container">
       <h2 class="service__subtitle">Service and our projects</h2>
         <div class="service__buttons">
           <button class="service__button button service__button_hover service__button_active" type="button">Gardens</button>
@@ -74,67 +82,91 @@
               <button class="service__button button service__button_hover service__button_active" type="button">Planting</button>
         </div>
     </div>
-  <div class="cards grid">
-    <a href="#" class="cards__item">
-      <figure class="cards__item_blured">
-        <span class="cards-img" style="background-image: url(./images/projects_1.jpg)"></span>
-          <figcaption>
-            <h3 class="cards-title">Garden care</h3>
-              <p class="cards-text">Lorem Ipsum has been the industry</p>
-          </figcaption>
-      </figure>
-    </a>
-
-    <a href="#" class="cards__item">
-      <figure class="cards__item_blured">
-        <span class="cards-img" style="background-image: url(./images/projects_2.jpg)"></span>
-          <figcaption>
-            <h3 class="cards-title">Planting</h3>
-              <p class="cards-text">Lorem Ipsum has been the industry</p>
-          </figcaption>
-      </figure>
-    </a>
-
-    <a href="#" class="cards__item">
-      <figure class="cards__item_blured">
-        <span class="cards-img" style="background-image: url(./images/projects_3.jpg)"></span>
-          <figcaption>
-            <h3 class="cards-title">Lawn care</h3>
-              <p class="cards-text">Lorem Ipsum has been the industry</p>
-          </figcaption>
-      </figure>
-    </a>
-
-    <a href="#" class="cards__item">
-      <figure class="cards__item_blured">
-        <span class="cards-img" style="background-image: url(./images/projects_4.jpg)"></span>
-          <figcaption>
-            <h3 class="cards-title">Planting</h3>
-              <p class="cards-text">Lorem Ipsum has been the industry</p>
-          </figcaption>
-      </figure>
-    </a>
-
-    <a href="#" class="cards__item">
-      <figure class="cards__item_blured">
-        <span class="cards-img" style="background-image: url(./images/projects_5.jpg)"></span>
-          <figcaption>
+    <div class="cards grid container">
+      <a href="#" class="cards__item">
+        <figure class="cards__item_blured">
+          <!-- <span class="cards-img" style="background-image: url(./images/projects_1.jpg)"></span> -->
+          <picture>
+            <source srcset="./images/service_card_small/project_1_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./images/projects_1.jpg" alt="master">
+          </picture>
+            <figcaption>
               <h3 class="cards-title">Garden care</h3>
-              <p class="cards-text">Lorem Ipsum has been the industry</p>
-          </figcaption>
-      </figure>
-    </a>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </a>
 
-    <a href="#" class="cards__item">
-      <figure class="cards__item_blured">
-        <span class="cards-img" style="background-image: url(./images/projects_6.jpg)"></span>
-          <figcaption>
-            <h3 class="cards-title">Planting</h3>
-              <p class="cards-text">Lorem Ipsum has been the industry</p>
-          </figcaption>
-      </figure>
-    </a>
-  </div>
+      <a href="#" class="cards__item">
+        <figure class="cards__item_blured">
+          <!-- <span class="cards-img" style="background-image: url(./images/projects_2.jpg)"></span> -->
+          <picture>
+            <source srcset="./images/service_card_small/project_2_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./images/projects_2.jpg" alt="lemon">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Planting</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="cards__item">
+        <figure class="cards__item_blured">
+          <!-- <span class="cards-img" style="background-image: url(./images/projects_3.jpg)"></span> -->
+          <picture>
+            <source srcset="./images/service_card_small/project_3_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./images/projects_3.jpg" alt="care">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Lawn care</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="cards__item">
+        <figure class="cards__item_blured">
+          <!-- <span class="cards-img" style="background-image: url(./images/projects_4.jpg)"></span> -->
+          <picture>
+            <source srcset="./images/service_card_small/project_4_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./images/projects_4.jpg" alt="girl">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Planting</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="cards__item">
+        <figure class="cards__item_blured">
+          <!-- <span class="cards-img" style="background-image: url(./images/projects_5.jpg)"></span> -->
+          <picture>
+            <source srcset="./images/service_card_small/project_5_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./images/projects_5.jpg" alt="flowers">
+          </picture>
+            <figcaption>
+                <h3 class="cards-title">Garden care</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="cards__item">
+        <figure class="cards__item_blured">
+          <!-- <span class="cards-img" style="background-image: url(./images/projects_6.jpg)"></span> -->
+          <picture>
+            <source srcset="./images/service_card_small/project_6_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./images/projects_6.jpg" alt="cactus">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Planting</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </a>
+    </div>
   </div>
 </section>
 
