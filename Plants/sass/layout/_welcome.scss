@@ -12,7 +12,7 @@
   @include media-responsive {
     order: 2;
   }
-  @include media-mobile {
+  @include media-responsive-640 {
     display: none;
   }
 }

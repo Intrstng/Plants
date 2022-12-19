@@ -9,6 +9,9 @@
   @include media-responsive {
     margin-bottom: 62px;
   }
+  @include media-responsive-640 {
+    margin-bottom: 35px;
+  }
   @include media-mobile {
     width: 224px;
     margin-bottom: 20px;

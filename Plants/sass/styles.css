@@ -281,7 +281,12 @@ h4 {
   list-style-type: none;
   gap: 47px;
 }
-@media (max-width: 380px) {
+@media (max-width: 767px) {
+  .nav {
+    gap: 25px;
+  }
+}
+@media (max-width: 640px) {
   .nav {
     display: none;
   }
@@ -319,7 +324,7 @@ h4 {
   width: 40px;
   height: 26px;
 }
-@media (max-width: 380px) {
+@media (max-width: 640px) {
   .hamburger {
     display: flex;
     padding-top: 5px;
@@ -489,6 +494,11 @@ h4 {
     margin-bottom: 62px;
   }
 }
+@media (max-width: 640px) {
+  .accordion {
+    margin-bottom: 35px;
+  }
+}
 @media (max-width: 380px) {
   .accordion {
     width: 224px;
@@ -641,7 +651,7 @@ h4 {
     order: 2;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 640px) {
   .welcome__image-block {
     display: none;
   }
@@ -831,9 +841,14 @@ h4 {
   align-self: center;
   gap: 39px;
 }
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .service__buttons {
     flex-flow: wrap;
+    gap: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .service__buttons {
     gap: 9px;
   }
 }
@@ -877,7 +892,13 @@ h4 {
     padding-bottom: 71px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 767px) {
+  .cards {
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+  }
+}
+@media (max-width: 640px) {
   .cards {
     grid-template-columns: 280px;
     row-gap: 34px;
@@ -966,11 +987,16 @@ h4 {
     padding: 41px 0 100px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 640px) {
   .price__content {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 35px 0 70px;
+  }
+}
+@media (max-width: 380px) {
+  .price__content {
     padding: 26px 0 39px;
   }
 }
@@ -990,7 +1016,7 @@ h4 {
     margin: 0 0 56px 16px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 640px) {
   .prices__card > h2 {
     margin: 0 0 36px;
     font-weight: 700;
@@ -1013,8 +1039,9 @@ h4 {
   font-size: 2.5rem;
   line-height: 3rem;
 }
-@media (max-width: 380px) {
+@media (max-width: 640px) {
   .prices-contacts {
+    align-self: center;
     align-items: center;
   }
 }
@@ -1027,12 +1054,17 @@ h4 {
     margin: 99px 0 28px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 640px) {
   .prices-contacts > h4 {
     margin: 0 0 21px;
-    max-width: 235px;
+    max-width: 350px;
     text-align: center;
     letter-spacing: -0.4px;
+  }
+}
+@media (max-width: 380px) {
+  .prices-contacts > h4 {
+    max-width: 235px;
   }
 }
 .prices-contacts span {
@@ -1044,7 +1076,7 @@ h4 {
   bottom: -20px;
   right: -10px;
 }
-@media (max-width: 380px) {
+@media (max-width: 640px) {
   .prices__leafs-right {
     display: none;
   }
@@ -1206,7 +1238,7 @@ h4 {
 }
 @media (max-width: 380px) {
   .footer__content {
-    padding-top: 18px;
+    padding: 18px 0 16px;
   }
 }
 
@@ -1222,15 +1254,24 @@ h4 {
     gap: 1.6rem;
   }
 }
+@media (max-width: 768px) {
+  .footer__copyright {
+    gap: 20px;
+  }
+}
 @media (max-width: 380px) {
   .footer__copyright {
     margin: 0 0 8px;
     gap: 1.25rem;
   }
 }
-
+@media (max-width: 768px) {
+  .footer__copyright > p:nth-child(2) {
+    margin-right: 8px;
+  }
+}
 @media (max-width: 380px) {
-  .year {
+  .footer__copyright > p:nth-child(2) {
     margin-right: 7px;
   }
 }

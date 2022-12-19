@@ -1,13 +1,16 @@
 .nav {
-  @include media-mobile {
-    display: none;
-  }
   display: flex;
   margin: 0;
   padding: 0;
   flex-wrap: nowrap;
   list-style-type: none;
   gap: 47px;
+  @include media-tablet-min {
+    gap: 25px;
+  }
+  @include media-responsive-640 {
+    display: none;
+  }
 }
 .nav-link {
   letter-spacing: 0.1px;

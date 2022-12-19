@@ -4,7 +4,7 @@
   cursor: pointer;
   width: 40px;
   height: 26px;
-  @include media-mobile {
+  @include media-responsive-640 {
     display: flex;
     padding-top: 5px;
   }
