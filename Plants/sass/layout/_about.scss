@@ -16,8 +16,14 @@
   @include media-tablet {
     max-width: 668px;
   }
+                                            @include media-responsive-640 {
+                                              width: 100%;
+                                            }
   @include media-mobile {
     max-width: 330px;
+  }
+  @include media-mobile-small {
+    max-width: 100%;
   }
   & > h2 {
     width: 95%;
@@ -31,9 +37,15 @@
     @include media-tablet-min {
       margin-left: 0;
     }
+                                                          @include media-responsive-640 {
+                                                            width: 100%;
+                                                          }
     @include media-mobile {
       max-width: 330px;
       margin-bottom: 14px;
+    }
+    @include media-mobile-small {
+      width: 100%;
     }
 }
   & span {
@@ -47,10 +59,17 @@
       max-width: 668px;
       margin-bottom: 68px;
     }
+                                                      @include media-responsive-640 {
+                                                        width: 100%;
+                                                      }
     @include media-mobile {
       max-width: 320px;
       margin-bottom: 4px;
       @include font(400, 0.93rem, 1.56rem);
+    }
+    @include media-mobile-small {
+      width: 100%;
+      margin-bottom: 0;
     }
 }
 }
