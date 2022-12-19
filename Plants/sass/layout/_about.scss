@@ -16,9 +16,9 @@
   @include media-tablet {
     max-width: 668px;
   }
-                                            @include media-responsive-640 {
-                                              width: 100%;
-                                            }
+  @include media-responsive-640 {
+    width: 100%;
+  }
   @include media-mobile {
     max-width: 330px;
   }
@@ -37,9 +37,9 @@
     @include media-tablet-min {
       margin-left: 0;
     }
-                                                          @include media-responsive-640 {
-                                                            width: 100%;
-                                                          }
+    @include media-responsive-640 {
+      width: 100%;
+    }
     @include media-mobile {
       max-width: 330px;
       margin-bottom: 14px;
@@ -59,11 +59,11 @@
       max-width: 668px;
       margin-bottom: 68px;
     }
-                                                      @include media-responsive-640 {
-                                                        width: 100%;
-                                                      }
+    @include media-responsive-640 {
+      width: 100%;
+    }
     @include media-mobile {
-      max-width: 320px;
+      max-width: 325px;
       margin-bottom: 4px;
       @include font(400, 0.93rem, 1.56rem);
     }

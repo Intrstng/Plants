@@ -26,7 +26,7 @@
   }
   @include media-mobile {
     margin: 0 0 8px;
-    gap: 1.25rem;
+    gap: 1.125rem;
   }
   & > p {
     @include media-mobile-small {
@@ -34,7 +34,7 @@
     }
     &:nth-child(2) {
       @include media-tablet {
-        margin-right: 8px;
+        margin-right: 3px;
       }
       @include media-mobile {
         margin-right: 7px;
