@@ -8,6 +8,11 @@
   @extend %transition;
   @extend %font-primary;
   @include font(400, 1.25rem, 1.625rem);
+  @include media-mobile {
+    @include font(400, 0.93rem, 1.25rem);
+    width: 121px;
+    padding: 7px 10px 6px 10px;
+  }
 }
 .welcome__button {
   padding: 10px 27px;
@@ -21,6 +26,11 @@
   @include font(400, 1rem, 1.25rem);
   @include media-responsive {
     word-spacing: -4px;
+  }
+  @include media-mobile {
+    @include font(400, 0.625rem, 1.25rem);
+    padding: 5px 14px;
+    word-spacing: normal;
   }
 }
 .service__button {

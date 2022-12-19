@@ -4,14 +4,20 @@
   margin-bottom: 80px;
   @include flex(flex, left, flex-start);
   flex-flow: wrap;
-  & > h2 {
-      flex-basis: 306px;
-      color: $color-primary;
-  }
   @include media-tablet {
     padding-top: 60px;
     margin-bottom: 38px;
     gap: 12px;
+  }
+  @include media-mobile {
+    padding-top: 30px;
+    margin-bottom: 40px;
+    max-width: 275px;
+    gap: 9px;
+  }
+  & > h2 {
+      flex-basis: 306px;
+      color: $color-primary;
   }
 }
 .service__buttons {
@@ -19,6 +25,10 @@
   display: flex;
   align-self: center;
   gap: 39px;
+  @include media-mobile {
+    flex-flow: wrap;
+    gap: 9px;
+  }
 }
 ///// Убрать ///////
 .service__buttons {
@@ -50,6 +60,11 @@
   }
   @include media-tablet {
     padding-bottom: 71px;
+  }
+  @include media-mobile {
+    grid-template-columns: 280px;
+    row-gap: 34px;
+    padding-bottom: 27px;
   }
 }
 .cards__item {

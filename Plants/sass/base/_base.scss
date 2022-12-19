@@ -24,12 +24,18 @@ h1 {
   @include media-responsive {
     @include font(700, 2.18rem, 3.125rem);
   }
+  @include media-mobile {
+    @include font(700, 1.56rem, 2.18rem);
+  }
 }
 h2 {
   @extend %font-primary;
   @include font(400, 2.5rem, 3.25rem);
   @include media-tablet {
     @include font(400, 2.18rem, 2.875rem);
+  }
+  @include media-mobile {
+    @include font(400, 1.56rem, 2.06rem);
   }
 }
 h3 {
@@ -41,5 +47,8 @@ h4 {
   @include font(700, 2.5rem, 3.125rem);
   @include media-tablet {
     @include font(700, 1.56rem, 2.18rem);
+  }
+  @include media-mobile {
+    @include font(700, 1.25rem, 2.18rem);
   }
 }

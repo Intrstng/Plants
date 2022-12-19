@@ -7,11 +7,17 @@
     align-items: center;
     padding: 40px 0 91px;
   }
+  @include media-mobile {
+    padding: 30px 0 26px;
+  }
 }
 .about__card {
   max-width: 49.5%;
   @include media-tablet {
     max-width: 668px;
+  }
+  @include media-mobile {
+    max-width: 330px;
   }
   & > h2 {
     width: 95%;
@@ -25,7 +31,10 @@
     @include media-tablet-min {
       margin-left: 0;
     }
-    
+    @include media-mobile {
+      max-width: 330px;
+      margin-bottom: 14px;
+    }
 }
   & span {
   color: $color-additional;
@@ -37,6 +46,11 @@
     @include media-tablet {
       max-width: 668px;
       margin-bottom: 68px;
+    }
+    @include media-mobile {
+      max-width: 320px;
+      margin-bottom: 4px;
+      @include font(400, 0.93rem, 1.56rem);
     }
 }
 }

@@ -3,6 +3,9 @@
   @include media-tablet {
     padding: 36px 0 31px;
   }
+  @include media-mobile {
+    padding: 26px 0 34px;
+  }
   padding: 43px 0 41px;
 }
 // Убрать

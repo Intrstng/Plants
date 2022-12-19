@@ -1,12 +1,13 @@
 .hamburger {
-  @include media-mobile {
-    display: flex;
-  }
   display: none;
   align-items: center;
   cursor: pointer;
   width: 40px;
   height: 26px;
+  @include media-mobile {
+    display: flex;
+    padding-top: 5px;
+  }
   @extend %transition;
   &:hover {
     transform: scale(1.15);

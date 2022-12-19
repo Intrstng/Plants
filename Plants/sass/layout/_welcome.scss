@@ -4,10 +4,16 @@
   @include media-responsive {
     padding: 32px 0 70px;
   }
+  @include media-mobile {
+    padding: 26px 0 24px;
+  }
 }
 .welcome__image-block {
   @include media-responsive {
     order: 2;
+  }
+  @include media-mobile {
+    display: none;
   }
 }
 .welcome__image {
@@ -34,6 +40,10 @@
         margin: 0px 0px 30px;
         padding-top: 8px;
       }
+      @include media-mobile {
+        margin-bottom: 21px;
+        padding: 0;
+      }
   }
   & span {
     color: $color-primary;
@@ -47,6 +57,10 @@
       @include font(400, 1rem, 1.56rem);
       padding-left: 6px;
       margin-bottom: 36px;
+    }
+    @include media-mobile {
+      margin-bottom: 25px;
+      padding: 0;
     }
   }
 }
