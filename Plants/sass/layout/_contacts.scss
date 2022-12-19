@@ -6,6 +6,9 @@
     align-items: center;
     padding-top: 41px;
   }
+  @include media-mobile {
+    padding-top: 25px;
+  }
   & > h2 {
     margin: 7px 0 0 45px;
     color: $color-primary;
@@ -13,8 +16,12 @@
       margin-left: 0px;
     }
     @include media-responsive {
-      @include font(700, 2.5rem, 3.25rem);
       margin: 0 0 98px;
+      @include font(700, 2.5rem, 3.25rem);
+    }
+    @include media-mobile {
+      margin-bottom: 81px;
+      @include font(700, 1.56rem, 2.06rem);
     }
   }
 }
@@ -26,15 +33,30 @@
     max-width: 100%;
     margin-left: 20px;
   }
+  @include media-mobile {
+    margin-left: -5px;
+  }
 }
 .city {
   width: 450px;
+  // position: relative;
   @include media-laptop {
     width: 310px; 
   }
   @include media-responsive {
+    margin-bottom: 251px;
     width: 450px;
     order: 2;
+  }
+  @include media-tablet-min {
+    width: 350px; 
+  }
+  @include media-mobile {
+    margin-bottom: 132px;
+    width: 300px;
+  }
+  @include media-mobile-small {
+    width: 260px;
   }
 }
 .city__dropdown {
@@ -45,7 +67,10 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   @include flex(flex, space-between, center);
   @include media-responsive {
-    margin: 0 0 251px;
+    margin: 0;
+  }
+  @include media-mobile {
+    padding: 5px 22px 5px 19px;
   }
   & > p {  
     letter-spacing: 0.05em;
@@ -61,7 +86,10 @@
   }
 }
 .city__dropdown-content {
-                                                                     display: none;
+  // position: absolute;
+  // top: 50px;
+  // left: 0;
+                                                                     display: none;                                                           
   & > a {
     display: inline-block;
     width: 100%;

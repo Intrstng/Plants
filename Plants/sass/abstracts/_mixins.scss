@@ -26,6 +26,6 @@
   @media (max-width: $mobile-width) { @content; }
 }
 
-@mixin media-mobilesmall {
-  @media (max-width: $mobilesmall-width) { @content; }
+@mixin media-mobile-small {
+  @media (max-width: $mobile-small-width) { @content; }
 }

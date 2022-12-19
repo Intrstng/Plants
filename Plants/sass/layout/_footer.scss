@@ -10,6 +10,9 @@
     justify-content: flex-start;
     padding: 1.25rem 0 1.75rem;
   }
+  @include media-mobile {
+    padding-top: 18px;
+  }
 }
 .footer__copyright {
   gap: 1.25rem;
@@ -17,6 +20,15 @@
   @include media-responsive {
     margin: 0.56rem 0 0.5rem;
     gap: 1.6rem;
+  }
+  @include media-mobile {
+    margin: 0 0 8px;
+    gap: 1.25rem;
+  }
+}
+.year {
+  @include media-mobile {
+    margin-right: 7px;
   }
 }
 .social {
@@ -27,6 +39,9 @@
   @include flex(flex, space-between, center);
   @include media-laptop {
     gap: 0.8rem;
+  }
+  @include media-mobile {
+    flex-flow: wrap;
   }
 }
 .social__link {
@@ -42,6 +57,9 @@
   }
   @include media-responsive {
     margin-bottom: 1.19rem;
+  }
+  @include media-mobile {
+    margin-bottom: 6px;
   }
 }
 .rs-img,

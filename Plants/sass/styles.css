@@ -9,7 +9,7 @@
   font-family: "Inika", serif;
 }
 
-.footer__content, .city__dropdown > p, .prices-contacts, .prices__card > h2, .cards-text, .cards-title, .about__card > p, .welcome__card > p, .panel__button, .panel__price > span:before, .panel__price > span, .panel__price, .panel__text, .accordion__button-opened > p, .city__dropdown-content > a, .adresses__info, .adresses__titles, .accordion__button > p, .welcome__button, h4, h3, h1 {
+.footer__content, .city__dropdown > p, .prices-contacts, .prices__card > h2, .cards-text, .cards-title, .about__card > p, .welcome__card > p, .panel__price > span:before, .panel__price > span, .panel__price, .panel__text, .accordion__button-opened > p, .city__dropdown-content > a, .adresses__info, .adresses__titles, .panel__button, .accordion__button > p, .welcome__button, h4, h3, h1 {
   font-family: "Inter", sans-serif;
 }
 
@@ -162,6 +162,11 @@ h4 {
     padding: 11px 12px 11px 6px;
   }
 }
+@media (max-width: 380px) {
+  .prices__button {
+    padding: 7px 22px;
+  }
+}
 
 .accordion__button {
   flex-wrap: nowrap;
@@ -173,15 +178,47 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 380px) {
+  .accordion__button {
+    padding: 16px 38px 14px 30px;
+  }
+}
 .accordion__button > p {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
 }
+@media (max-width: 380px) {
+  .accordion__button > p {
+    font-weight: 700;
+    font-size: 0.93rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.4px;
+  }
+}
 
 .accordion__dropdown-btn > img {
   display: inline-block;
   vertical-align: middle;
+}
+
+.panel__button {
+  padding: 5px 27px 5px 20px;
+  text-decoration: none;
+  color: #717171;
+  background-color: #FFFFFF;
+  border-radius: 0.625rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+@media (max-width: 380px) {
+  .panel__button {
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    padding: 5px 20px;
+  }
 }
 
 .adresses__button {
@@ -452,6 +489,14 @@ h4 {
     margin-bottom: 62px;
   }
 }
+@media (max-width: 380px) {
+  .accordion {
+    width: 224px;
+    margin-bottom: 20px;
+    padding: 28px 22px 27px;
+    gap: 14px;
+  }
+}
 
 .accordion__opened {
   display: none;
@@ -459,6 +504,11 @@ h4 {
   max-width: 250px;
   background-color: #D6E7D2;
   border-radius: 1.25rem;
+}
+@media (max-width: 380px) {
+  .accordion__opened {
+    padding: 16px 38px 14px 30px;
+  }
 }
 .accordion__opened > hr {
   height: 0.5px;
@@ -477,6 +527,13 @@ h4 {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;
+}
+@media (max-width: 380px) {
+  .accordion__button-opened > p {
+    font-weight: 700;
+    font-size: 0.93rem;
+    line-height: 1.25rem;
+  }
 }
 .accordion__button-opened:after {
   content: "";
@@ -521,17 +578,6 @@ h4 {
   color: #E06733;
   font-weight: 700;
   font-size: 0.75rem;
-  line-height: 1.25rem;
-}
-
-.panel__button {
-  padding: 5px 27px 5px 20px;
-  text-decoration: none;
-  color: #717171;
-  background-color: #FFFFFF;
-  border-radius: 0.625rem;
-  font-weight: 700;
-  font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
@@ -925,6 +971,7 @@ h4 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 26px 0 39px;
   }
 }
 
@@ -945,6 +992,7 @@ h4 {
 }
 @media (max-width: 380px) {
   .prices__card > h2 {
+    margin: 0 0 36px;
     font-weight: 700;
     font-size: 1.56rem;
     line-height: 1.87rem;
@@ -958,13 +1006,17 @@ h4 {
   position: relative;
   max-width: 452px;
   color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3rem;
+}
+@media (max-width: 380px) {
+  .prices-contacts {
+    align-items: center;
+  }
 }
 .prices-contacts > h4 {
   text-align: right;
@@ -975,6 +1027,14 @@ h4 {
     margin: 99px 0 28px;
   }
 }
+@media (max-width: 380px) {
+  .prices-contacts > h4 {
+    margin: 0 0 21px;
+    max-width: 235px;
+    text-align: center;
+    letter-spacing: -0.4px;
+  }
+}
 .prices-contacts span {
   color: #499A18;
 }
@@ -983,6 +1043,11 @@ h4 {
   position: absolute;
   bottom: -20px;
   right: -10px;
+}
+@media (max-width: 380px) {
+  .prices__leafs-right {
+    display: none;
+  }
 }
 
 .contact__content {
@@ -998,6 +1063,11 @@ h4 {
     padding-top: 41px;
   }
 }
+@media (max-width: 380px) {
+  .contact__content {
+    padding-top: 25px;
+  }
+}
 .contact__content > h2 {
   margin: 7px 0 0 45px;
   color: #499A18;
@@ -1009,10 +1079,18 @@ h4 {
 }
 @media (max-width: 1000px) {
   .contact__content > h2 {
+    margin: 0 0 98px;
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 3.25rem;
-    margin: 0 0 98px;
+  }
+}
+@media (max-width: 380px) {
+  .contact__content > h2 {
+    margin-bottom: 81px;
+    font-weight: 700;
+    font-size: 1.56rem;
+    line-height: 2.06rem;
   }
 }
 
@@ -1027,6 +1105,11 @@ h4 {
     margin-left: 20px;
   }
 }
+@media (max-width: 380px) {
+  .contact__image-block {
+    margin-left: -5px;
+  }
+}
 
 .city {
   width: 450px;
@@ -1038,8 +1121,25 @@ h4 {
 }
 @media (max-width: 1000px) {
   .city {
+    margin-bottom: 251px;
     width: 450px;
     order: 2;
+  }
+}
+@media (max-width: 767px) {
+  .city {
+    width: 350px;
+  }
+}
+@media (max-width: 380px) {
+  .city {
+    margin-bottom: 132px;
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  .city {
+    width: 260px;
   }
 }
 
@@ -1055,7 +1155,12 @@ h4 {
 }
 @media (max-width: 1000px) {
   .city__dropdown {
-    margin: 0 0 251px;
+    margin: 0;
+  }
+}
+@media (max-width: 380px) {
+  .city__dropdown {
+    padding: 5px 22px 5px 19px;
   }
 }
 .city__dropdown > p {
@@ -1099,6 +1204,11 @@ h4 {
     padding: 1.25rem 0 1.75rem;
   }
 }
+@media (max-width: 380px) {
+  .footer__content {
+    padding-top: 18px;
+  }
+}
 
 .footer__copyright {
   gap: 1.25rem;
@@ -1110,6 +1220,18 @@ h4 {
   .footer__copyright {
     margin: 0.56rem 0 0.5rem;
     gap: 1.6rem;
+  }
+}
+@media (max-width: 380px) {
+  .footer__copyright {
+    margin: 0 0 8px;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .year {
+    margin-right: 7px;
   }
 }
 
@@ -1125,6 +1247,11 @@ h4 {
 @media (max-width: 1279px) {
   .social {
     gap: 0.8rem;
+  }
+}
+@media (max-width: 380px) {
+  .social {
+    flex-flow: wrap;
   }
 }
 
@@ -1144,6 +1271,11 @@ h4 {
 @media (max-width: 1000px) {
   .logo-rs {
     margin-bottom: 1.19rem;
+  }
+}
+@media (max-width: 380px) {
+  .logo-rs {
+    margin-bottom: 6px;
   }
 }
 

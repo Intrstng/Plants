@@ -45,6 +45,9 @@
   @include media-tablet {
     padding: 11px 12px 11px 6px;
   }
+  @include media-mobile {
+    padding: 7px 22px;
+  }
 }
 .accordion__button {
   flex-wrap: nowrap;
@@ -53,15 +56,35 @@
   background-color: $color-bground;
   border-radius: 1.25rem;
   @include flex(flex, space-between, center);
+  @include media-mobile {
+    padding: 16px 38px 14px 30px;
+  }
   & > p {
       @extend %font-add;
       @include font(700, 1.25rem, 1.25rem);
+      @include media-mobile {
+        @include font(700, 0.93rem, 1.25rem);
+        letter-spacing: -0.4px;
+      }
   }
 }
 .accordion__dropdown-btn {
   & > img {
       display: inline-block;
       vertical-align: middle;
+  }
+}
+.panel__button {
+  padding: 5px 27px 5px 20px;
+  text-decoration: none;
+  color: $color-titles;
+  background-color: $color-light;
+  border-radius: 0.625rem;
+  @extend %font-add;
+  @include font(700, 0.875rem, 1.25rem);
+  @include media-mobile {
+    @include font(700, 0.75rem, 1.25rem);
+    padding: 5px 20px;
   }
 }
 .adresses__button {

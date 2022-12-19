@@ -9,13 +9,22 @@
   @include media-responsive {
     margin-bottom: 62px;
   }
+  @include media-mobile {
+    width: 224px;
+    margin-bottom: 20px;
+    padding: 28px 22px 27px;
+    gap: 14px;
+  }
 }
 .accordion__opened {
-                                          display: none;
+                                                             display: none;
   padding: 16px 40px 14px 40px;
   max-width: 250px;
   background-color: $color-menu;
   border-radius: 1.25rem;
+  @include media-mobile {
+    padding: 16px 38px 14px 30px;
+  }
   & > hr {
     height: 0.5px;
     color: $color-hr-card;
@@ -29,6 +38,9 @@
       color: $color-black;
       @extend %font-add;
       @include font(700, 1.25rem, 1.25rem);
+      @include media-mobile {
+        @include font(700, 0.93rem, 1.25rem);
+      }
     }
     &:after {
      content: '';
@@ -48,8 +60,8 @@
   }
 }
 .panel__text {
-                                                                  padding-right: 5px;
-                                                                  margin-bottom: 6px;
+  padding-right: 5px;
+  margin-bottom: 6px;
   color: $color-titles;
   @extend %font-add;
   @include font(300, 0.625rem, 0.625rem);
@@ -72,13 +84,4 @@
       @include font(700, 0.75rem, 1.25rem);
     }
   }
-}
-.panel__button {
-  padding: 5px 27px 5px 20px;
-  text-decoration: none;
-  color: $color-titles;
-  background-color: $color-light;
-  border-radius: 0.625rem;
-  @extend %font-add;
-  @include font(700, 0.875rem, 1.25rem);
 }
