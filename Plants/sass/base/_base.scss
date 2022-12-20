@@ -14,6 +14,9 @@ body {
   @extend %font-primary;
   font-size: 1rem;
 }
+.scroll-lock {
+  overflow: hidden;
+}
 .grid {
   display: grid;
 }

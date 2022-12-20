@@ -4,6 +4,7 @@
   cursor: pointer;
   width: 40px;
   height: 26px;
+  z-index: 5;
   @include media-responsive-640 {
     display: flex;
     padding-top: 5px;
@@ -35,6 +36,8 @@
   border-top: 2px solid $color-titles;
   border-bottom: 2px solid $color-titles;
   position: relative;
+  text-replace: auto;
+  @extend %transition;
   &:before,
   &:after {
     content: '';
@@ -57,7 +60,7 @@
 .hamburger__line_opened {
   height: 2px;
   border-top: none;
-  transform: rotate(45deg);
+  transform: rotate(45deg) scale(0.55);
   &:before,
   &:after {
     top: 0;
@@ -69,4 +72,24 @@
   &:after{
     transform: rotate(90deg);
   }
+}
+
+// Сдвигает гамбургер кнопку вправо после открытия меню
+.hamburger-btn-position {
+  @include media-responsive-640 {
+    margin-right: -35px;
+  }
+  @include media-mobile {
+    margin-right: -10px;
+  }
+}
+// Popup прозрачный слой для гамбургер меню
+.popup {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0);
 }
