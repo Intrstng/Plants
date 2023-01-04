@@ -1,0 +1,129 @@
+.contact__content {
+  padding-top: 52px;
+  @include flex(flex, space-between, flex-start);
+  @include media-responsive {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 41px;
+  }
+  @include media-mobile {
+    padding-top: 25px;
+  }
+  & > h2 {
+    margin: 7px 0 0 45px;
+    color: $color-primary;
+    @include media-laptop {
+      margin-left: 0px;
+    }
+    @include media-responsive {
+      margin: 0 0 98px;
+      @include font(700, 2.5rem, 3.25rem);
+    }
+    @include media-mobile {
+      margin-bottom: 81px;
+      @include font(700, 1.56rem, 2.06rem);
+    }
+  }
+}
+.contact__image-block {
+  max-width: 35%;
+  font-size: 0;
+  @include media-responsive {
+    order: 3;
+    max-width: 100%;
+    margin-left: 20px;
+  }
+  @include media-mobile {
+    margin-left: -5px;
+  }
+  &_active {
+      margin-top: -8px;
+      @include media-laptop {
+        margin-top: 0;
+      }
+    }
+}
+.city {
+  width: 450px;
+  // position: relative;
+  @include media-laptop {
+    width: 310px; 
+  }
+  @include media-responsive {
+    margin-bottom: 251px;
+    width: 450px;
+    order: 2;
+  }
+  @include media-tablet-min {
+    width: 350px; 
+  }
+  @include media-mobile {
+    margin-bottom: 132px;
+    width: 300px;
+  }
+  @include media-mobile-small {
+    width: 260px;
+  }
+  &_opened {
+    @include media-tablet {
+      margin-bottom: 18px;
+    }
+    @include media-mobile {
+      margin-bottom: 24px;
+    }
+  }
+}
+.city__dropdown {
+  width: 100%;
+  margin-top: 95px;
+  padding: 5px 35px 5px 20px;
+  background-color: $color-menu;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  @include flex(flex, space-between, center);
+  @include media-responsive {
+    margin: 0;
+  }
+  @include media-mobile {
+    padding: 5px 22px 5px 19px;
+  }
+  & > p {  
+    letter-spacing: 0.05em;
+    color: $color-titles;
+    @extend %font-add;
+    @include font(400, 1.25rem, 2.5rem);
+  }
+  &_active {
+    background-color: $color-menu-head-active;
+    box-shadow: none;
+    padding-left: 33px;
+  }
+  &_hover {
+    @extend %transition;
+    &:hover {
+      background-color: $color-menu-head-active;
+      box-shadow: none;
+      padding-left: 33px;
+    }
+  }
+}
+
+.city__dropdown-btn {
+  cursor: pointer;
+  & > svg {
+  display: inline-block;
+                                        width: 16px;
+                                        height: 16px;
+  vertical-align: middle;
+  }
+}
+.city__dropdown-content {
+  // position: absolute;
+  // top: 50px;
+  // left: 0;
+                                                                   //  display: none;                                                           
+  & > a {
+    display: inline-block;
+    width: 100%;
+  }
+}

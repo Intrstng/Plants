@@ -1,0 +1,46 @@
+.city__dropdown-content {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 30px 35px 15px 40px;
+    background-color: $color-menu-body-active;
+    @include flex(flex, space-between, flex-start);
+    & > p {
+        width: 100%;
+        margin-bottom: 7px;
+        text-decoration: none;   
+        letter-spacing: 0.05em;
+        color: $color-primary;
+        transition: all 0.3s linear;
+        position: relative;
+        cursor: pointer;
+        @extend %font-add;
+        @include font(400, 1rem, 2.5rem);
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 101%;
+          height: 1px;
+          left: -5px;
+          bottom: 7px;
+          background-color: $color-hr-line;
+          transition: all 0.3s linear;
+        }
+        &:hover {
+          color: $color-titles;
+          &:after {
+            background-color: $color-titles;
+          }
+        }
+        &:active {
+          color: $color-additional;
+          &:after {
+            background-color: $color-additional;
+          }
+        }
+    }
+}
+.closed {
+  display: none;
+}
