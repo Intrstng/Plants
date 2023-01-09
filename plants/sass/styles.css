@@ -19,12 +19,12 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  margin-left: 17px; /* Проверить */
+  /* margin-left: 17px; Если проверять на экране с разрешением 1280px в режиме Desktop */
 }
 
 body {
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1440px;
+  margin: 0 auto; */
   font-size: 1rem;
 }
 
