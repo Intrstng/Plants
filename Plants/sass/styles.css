@@ -25,8 +25,6 @@ html {
 }
 
 body {
-  max-width: 1440px;
-  margin: 0 auto;
   font-size: 1rem;
 }
 
@@ -199,6 +197,9 @@ h4 {
   }
 }
 
+.accordion__dropdown-btn {
+  cursor: pointer;
+}
 .accordion__dropdown-btn > img {
   display: inline-block;
   vertical-align: middle;
@@ -1323,6 +1324,9 @@ h4 {
   line-height: 2.5rem;
 }
 
+.city__dropdown-btn {
+  cursor: pointer;
+}
 .city__dropdown-btn > img {
   display: inline-block;
   vertical-align: middle;

@@ -9,8 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  max-width: $page-width;
-  margin: 0 auto;
+  // max-width: $page-width;
+  // margin: 0 auto;
   @extend %font-primary;
   font-size: 1rem;
 }
