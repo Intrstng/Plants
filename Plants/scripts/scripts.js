@@ -45,3 +45,7 @@ function clickLinkCloseHamburger(event) {
   }
 }
 navigationMenu.addEventListener('click', clickLinkCloseHamburger);
+
+
+
+console.log('Вёрстка валидная +10;\n Вёрстка семантическая +20;\n Вёрстка соответствует макету +48;\n Требования к css + 12;\n Интерактивность, реализуемая через css +20;\n---------------------------------------------\n Итоговый балл: 120.');

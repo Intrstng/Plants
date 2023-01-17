@@ -4,11 +4,11 @@
   @include media-tablet {
     padding: 41px 0 100px;
   }
-  @include media-responsive-640 {
+  @include media-responsive-645 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 35px 0 70px;
+    padding: 35px 0 225px;
   }
   @include media-mobile {
     padding: 26px 0 39px;
@@ -24,7 +24,7 @@
         @include font(700, 2.18rem, 2.62rem);
         margin: 0 0 56px 16px;
       }
-      @include media-responsive-640 {
+      @include media-responsive-645 {
         margin: 0 0 36px;
         @include font(700, 1.56rem, 1.87rem);
         text-align: center;
@@ -41,7 +41,7 @@
   @include flex(flex, flex-start, flex-end);
   @extend %font-add;
   @include font(700, 2.5rem, 3rem);
-  @include media-responsive-640 {
+  @include media-responsive-645 {
     align-self: center;
     align-items: center;
   }
@@ -51,7 +51,7 @@
       @include media-tablet {
         margin: 99px 0 28px;
       }
-      @include media-responsive-640 {
+      @include media-responsive-645 {
         margin: 0 0 21px;
         max-width: 350px;
         text-align: center;
@@ -68,7 +68,10 @@
   position: absolute;
   bottom: -20px;
   right: -10px;
-  @include media-responsive-640 {
-    display: none;
-  }
+          @include media-responsive-645 {
+            bottom: -200px;
+          }
+          @include media-mobile {
+            display: none;
+          }
 }
