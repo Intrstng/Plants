@@ -8,7 +8,7 @@
   @include media-tablet-min {
     gap: 25px;
   }
-  @include media-responsive-640 {
+  @include media-responsive-645 {
     // display: none;
     position: fixed;
     top: 0;
@@ -32,7 +32,7 @@
     transform: translateX(0);
   }
   .nav-item {
-    @include media-responsive-640 {
+    @include media-responsive-645 {
       display: block;
       position: relative;
       &:after {
@@ -66,7 +66,7 @@
   // Убрать // (подгонка под макет)
   &:first-child {
     margin-right: -4px;
-    @include media-responsive-640 {
+    @include media-responsive-645 {
       margin-right: 0;
     }
   }
@@ -92,7 +92,7 @@
     &_hover[active] {
         color: $color-additional;
     }
-    @include media-responsive-640 {
+    @include media-responsive-645 {
       display: block;
       color: $color-titles;
       &_hover {

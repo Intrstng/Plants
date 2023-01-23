@@ -5,6 +5,11 @@
     @include media-responsive {
       padding: 32px 0 70px;
     }
+    @include media-responsive-645 {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+    }
     @include media-mobile {
       padding: 26px 0 24px;
     }
@@ -13,7 +18,12 @@
     @include media-responsive {
       order: 2;
     }
-    @include media-responsive-640 {
+    @include media-responsive-645 {
+      margin-top: 20px;
+    }
+    @include media-mobile {
+      flex-direction: row;
+      align-items: flex-start;
       display: none;
     }
   }
@@ -31,6 +41,12 @@
     @include media-responsive {
       max-width: 345px;
     }
+    @include media-responsive-645 {
+      max-width: 100%;
+    }
+    @include media-mobile {
+      max-width: 345px;
+    }
   }
   &__card {
     & > h1 {
@@ -40,6 +56,9 @@
           order: 1;
           margin: 0px 0px 30px;
           padding-top: 8px;
+        }
+        @include media-responsive-645 {
+          width: 100%;
         }
         @include media-mobile {
           margin-bottom: 21px;

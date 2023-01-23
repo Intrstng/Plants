@@ -5,7 +5,7 @@
   width: 40px;
   height: 26px;
   z-index: 5;
-  @include media-responsive-640 {
+  @include media-responsive-645 {
     display: flex;
     padding-top: 5px;
   }
@@ -78,7 +78,7 @@
 
 // Сдвигает гамбургер кнопку вправо после открытия меню
 .hamburger-btn-position {
-  @include media-responsive-640 {
+  @include media-responsive-645 {
     margin-right: -35px;
   }
   @include media-mobile {

@@ -17,7 +17,7 @@
     @include media-tablet {
       max-width: 668px;
     }
-    @include media-responsive-640 {
+    @include media-responsive-645 {
       width: 100%;
     }
     @include media-mobile {
@@ -38,7 +38,7 @@
       @include media-tablet-min {
         margin-left: 0;
       }
-      @include media-responsive-640 {
+      @include media-responsive-645 {
         width: 100%;
       }
       @include media-mobile {
@@ -60,7 +60,7 @@
         max-width: 668px;
         margin-bottom: 68px;
       }
-      @include media-responsive-640 {
+      @include media-responsive-645 {
         width: 100%;
       }
       @include media-mobile {
