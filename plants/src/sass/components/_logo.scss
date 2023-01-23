@@ -1,5 +1,10 @@
 .logo {
   text-decoration: none;
+  &__img {
+    display: inline-block;
+    width: 81px;
+    height: 22px;
+  }
 }
 
 // Классы .logo-svg и .logo-path прописаны в svg-файле
@@ -17,20 +22,5 @@
     & .logo-path {
       fill: $color-primary;
     }
-//  & .logo-ico {
-//    stroke: $color-additional;
-// }
   }
-}
-
-// .logo__img {
-//   display: block;
-//   background-image: url("../../src/img/favicon.ico");
-//   width: 22px;
-//   height: 22px;
-// }
-.logo__img {
-  display: inline-block;
-  width: 81px;
-  height: 22px;
 }

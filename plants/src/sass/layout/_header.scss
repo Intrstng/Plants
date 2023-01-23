@@ -1,15 +1,17 @@
-.header__content {
-  @include flex(flex, space-between, center);
-  @include media-tablet {
-    padding: 36px 0 31px;
+.header {
+  &__content {
+    @include flex(flex, space-between, center);
+    @include media-tablet {
+      padding: 36px 0 31px;
+    }
+    @include media-mobile {
+      padding: 26px 0 34px;
+    }
+    padding: 43px 0 41px;
+    // Убрать
+    .logo {
+      align-self: flex-start;
+      padding-top: 10px;
+    }
   }
-  @include media-mobile {
-    padding: 26px 0 34px;
-  }
-  padding: 43px 0 41px;
-}
-// Убрать
-.logo {
-  align-self: flex-start;
-  padding-top: 10px;
 }

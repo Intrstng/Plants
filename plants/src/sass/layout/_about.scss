@@ -1,78 +1,80 @@
-.about__content {
-  padding: 93px 0 90px;
-  @include flex(flex, space-between, flex-start);
-  @include media-tablet {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 40px 0 91px;
-  }
-  @include media-mobile {
-    padding: 30px 0 26px;
-  }
-}
-.about__card {
-  max-width: 49.5%;
-  @include media-tablet {
-    max-width: 668px;
-  }
-  @include media-responsive-640 {
-    width: 100%;
-  }
-  @include media-mobile {
-    max-width: 330px;
-  }
-  @include media-mobile-small {
-    max-width: 100%;
-  }
-  & > h2 {
-    width: 95%;
-    margin: 69px 0 38px;
-    color: $color-primary;
+.about {
+  &__content {
+    padding: 93px 0 90px;
+    @include flex(flex, space-between, flex-start);
     @include media-tablet {
-      margin: 0 0 50px 120px;
-      text-align: center;
-      width: 425px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 40px 0 91px;
     }
-    @include media-tablet-min {
-      margin-left: 0;
+    @include media-mobile {
+      padding: 30px 0 26px;
+    }
+  }
+  &__card {
+    max-width: 49.5%;
+    @include media-tablet {
+      max-width: 668px;
     }
     @include media-responsive-640 {
       width: 100%;
     }
     @include media-mobile {
       max-width: 330px;
-      margin-bottom: 14px;
     }
     @include media-mobile-small {
-      width: 100%;
+      max-width: 100%;
     }
-}
-  & span {
-  color: $color-additional;
-}
-  & > p {
-    color: $color-text;
-    @extend %font-add;
-    @include font(400, 1.25rem, 1.875rem);
-    @include media-tablet {
-      max-width: 668px;
-      margin-bottom: 68px;
-    }
-    @include media-responsive-640 {
-      width: 100%;
-    }
-    @include media-mobile {
-      max-width: 325px;
-      margin-bottom: 4px;
-      @include font(400, 0.93rem, 1.56rem);
-    }
-    @include media-mobile-small {
-      width: 100%;
-      margin-bottom: 0;
-    }
-}
-}
-.about__image {
-  max-width: 100%;
+    & > h2 {
+      width: 95%;
+      margin: 69px 0 38px;
+      color: $color-primary;
+      @include media-tablet {
+        margin: 0 0 50px 120px;
+        text-align: center;
+        width: 425px;
+      }
+      @include media-tablet-min {
+        margin-left: 0;
+      }
+      @include media-responsive-640 {
+        width: 100%;
+      }
+      @include media-mobile {
+        max-width: 330px;
+        margin-bottom: 14px;
+      }
+      @include media-mobile-small {
+        width: 100%;
+      }
+  }
+    & span {
+    color: $color-additional;
+  }
+    & > p {
+      color: $color-text;
+      @extend %font-add;
+      @include font(400, 1.25rem, 1.875rem);
+      @include media-tablet {
+        max-width: 668px;
+        margin-bottom: 68px;
+      }
+      @include media-responsive-640 {
+        width: 100%;
+      }
+      @include media-mobile {
+        max-width: 325px;
+        margin-bottom: 4px;
+        @include font(400, 0.93rem, 1.56rem);
+      }
+      @include media-mobile-small {
+        width: 100%;
+        margin-bottom: 0;
+      }
+  }
+  }
+  &__image {
+    max-width: 100%;
+  }
 }

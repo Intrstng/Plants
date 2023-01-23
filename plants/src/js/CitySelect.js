@@ -20,6 +20,7 @@ function openCityMenu() {
   cityMenuForm.classList.toggle('closed');
   adressCard.classList.add('closed');
     // SVG-sprite (change)
+    cityDropdownArrow.classList.toggle('city-dropdown-arrow_active');
   // cityDropdownArrow.innerHTML = '<use xlink:href="./src/img/arrows-sprite.svg#grey-up"></use>';
  
 //  employeeImg.classList.add('contact__image-block_active');

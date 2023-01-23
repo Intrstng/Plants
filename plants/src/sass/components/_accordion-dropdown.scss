@@ -18,70 +18,72 @@
     padding: 28px 22px 27px;
     gap: 14px;
   }
-}
-.accordion__opened {
-                                                          //   display: none;
-  padding: 16px 40px 14px 40px;
-  max-width: 250px;
-  background-color: $color-menu;
-  border-radius: 1.25rem;
-  @include media-mobile {
-    padding: 16px 38px 14px 30px;
+  &__opened {
+    padding: 16px 40px 14px 40px;
+    max-width: 250px;
+    background-color: $color-menu;
+    border-radius: 1.25rem;
+    @include media-mobile {
+      padding: 16px 38px 14px 30px;
+    }
+    & > hr {
+      height: 0.5px;
+      color: $color-hr-card;
+    }
+    &_unactive {
+      display: none;
+    }
   }
-  & > hr {
-    height: 0.5px;
-    color: $color-hr-card;
-  }
-  &_unactive {
-    display: none;
-  }
-}
-.accordion__button-opened {
-  margin-bottom: 17px;
-  position: relative;
-  @include flex(flex, space-between, center);
-    & > p {
-      color: $color-black;
-      @extend %font-add;
-      @include font(700, 1.25rem, 1.25rem);
-      @include media-mobile {
-        @include font(700, 0.93rem, 1.25rem);
+  &__button-opened {
+    margin-bottom: 17px;
+    position: relative;
+    @include flex(flex, space-between, center);
+      & > p {
+        color: $color-black;
+        @extend %font-add;
+        @include font(700, 1.25rem, 1.25rem);
+        @include media-mobile {
+          @include font(700, 0.93rem, 1.25rem);
+        }
       }
-    }
-    &:after {
-     content: '';
-     display: block;
-     position: absolute;
-     width: 96.5%;
-     height: 0.5px;
-     left: 0;
-     top: 29px;
-     background-color: $color-hr-card;
-    }
-}
-.panel__text {
-  padding-right: 5px;
-  margin-bottom: 6px;
-  color: $color-titles;
-  @extend %font-add;
-  @include font(300, 0.625rem, 0.625rem);
-}
-.panel__price {
-  margin-bottom: 10px;
-  @extend %font-add;
-  @include font(400, 0.75rem, 1.25rem);
-  & > span {
-    margin-right: 8px;
-    color: $color-additional;
-    @extend %font-add;
-    @include font(700, 1rem, 1.25rem);
+      &:after {
+       content: '';
+       display: block;
+       position: absolute;
+       width: 96.5%;
+       height: 0.5px;
+       left: 0;
+       top: 29px;
+       background-color: $color-hr-card;
+      }
   }
-  & > span {
-    &:before {
-      content: '\0024';
+}
+
+.panel {
+  &__text {
+    padding-right: 5px;
+    margin-bottom: 6px;
+    color: $color-titles;
+    @extend %font-add;
+    @include font(300, 0.625rem, 0.625rem);
+  }
+  &__price {
+    margin-bottom: 10px;
+    @extend %font-add;
+    @include font(400, 0.75rem, 1.25rem);
+    & > span {
+      margin-right: 8px;
       color: $color-additional;
       @extend %font-add;
-      @include font(700, 0.75rem, 1.25rem);
+      @include font(700, 1rem, 1.25rem);
+    }
+    & > span {
+      &:before {
+        content: '\0024';
+        color: $color-additional;
+        @extend %font-add;
+        @include font(700, 0.75rem, 1.25rem);
+      }
     }
   }
 }

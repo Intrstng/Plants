@@ -17,7 +17,7 @@ function blurRemove(element) {
 function blurFigures(event) {
   // ---- Выбор не более двух кнопок в разделе Service ---- //
   let counter = serviceButtonsBlock.getElementsByClassName('active-btn');
-  let serviceType = event.path[0].innerHTML;
+  let serviceType = event.target.textContent;
 
   if (event.target.closest('button')) {
     if (counter.length < 2)  {

@@ -14,115 +14,128 @@
     padding: 7px 10px 6px 10px;
   }
 }
-.welcome__button {
-  padding: 10px 27px;
-  color: $color-black;
-  border: 2px solid $color-additional;
-  background-color: $color-bground;
-  border-radius: 10px;
-  cursor: pointer;
-  @extend %transition;
-  @extend %font-add;
-  @include font(400, 1rem, 1.25rem);
-  @include media-responsive {
+.welcome {
+  &__button {
     padding: 10px 27px;
-  }
-  @include media-mobile {
-    @include font(400, 0.625rem, 1.25rem);
-    padding: 5px 16px 5px 16px;
-  }
-}
-.service__button {
-  background-color: $color-bground;
-}
-.prices__button {
-  background-color: $color-light;
-  z-index: 1;
-  // Убрать // (подгонка под макет)
-  padding-left: 6px;
-  ////////////
-  @include media-tablet {
-    padding: 11px 12px 11px 6px;
-  }
-  @include media-mobile {
-    padding: 7px 22px;
-  }
-}
-.accordion__button {
-  flex-wrap: nowrap;
-  width: 100%;
-  padding: 15px 40px;
-  background-color: $color-bground;
-  border-radius: 1.25rem;
-  cursor: pointer;
-  @include flex(flex, space-between, center);
-  @include media-mobile {
-    padding: 16px 38px 14px 30px;
-  }
-  & > p {
-      @extend %font-add;
-      @include font(700, 1.25rem, 1.25rem);
-      @include media-mobile {
-        @include font(700, 0.93rem, 1.25rem);
-      }
-  }
-  &_hover {
+    color: $color-black;
+    border: 2px solid $color-additional;
+    background-color: $color-bground;
+    border-radius: 10px;
+    cursor: pointer;
     @extend %transition;
-    &:hover {
-      background-color: $color-menu-head-active;
+    @extend %font-add;
+    @include font(400, 1rem, 1.25rem);
+    @include media-responsive {
+      padding: 10px 27px;
+    }
+    @include media-mobile {
+      @include font(400, 0.625rem, 1.25rem);
+      padding: 5px 16px 5px 16px;
     }
   }
-  &_unactive { // Проверить
-    display: none;
+}
+.service {
+  &__button {
+    background-color: $color-bground;
   }
 }
-.accordion__dropdown-btn {
-  cursor: pointer;
-  & > img {
+.prices {
+  &__button {
+    background-color: $color-light;
+    z-index: 1;
+    // Убрать // (подгонка под макет)
+    padding-left: 6px;
+    ////////////
+    @include media-tablet {
+      padding: 11px 12px 11px 6px;
+    }
+    @include media-mobile {
+      padding: 7px 22px;
+    }
+  }
+}
+.accordion {
+  &__button {
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 15px 40px;
+    background-color: $color-bground;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    @include flex(flex, space-between, center);
+    @include media-mobile {
+      padding: 16px 38px 14px 30px;
+    }
+    & > p {
+        @extend %font-add;
+        @include font(700, 1.25rem, 1.25rem);
+        @include media-mobile {
+          @include font(700, 0.93rem, 1.25rem);
+        }
+    }
+    &_hover {
+      @extend %transition;
+      &:hover {
+        background-color: $color-menu-head-active;
+      }
+    }
+    &_unactive { // Проверить
+      display: none;
+    }
+  }
+  &__dropdown-btn {
+    cursor: pointer;
+    & > img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+  }
+  &__dropup-btn {
+    cursor: pointer;
+    & > img {
       display: inline-block;
       vertical-align: middle;
+    }
+  }
+  .panel {
+    &__button {
+      padding: 5px 27px 5px 20px;
+      text-decoration: none;
+      color: $color-titles;
+      background-color: $color-light;
+      border-radius: 0.625rem;
+      @extend %font-add;
+      @include font(700, 0.875rem, 1.25rem);
+      @include media-mobile {
+        @include font(700, 0.75rem, 1.25rem);
+        padding: 5px 20px;
+      }
+    }
   }
 }
-.accordion__dropup-btn {
-  cursor: pointer;
-  & > img {
-    display: inline-block;
-    vertical-align: middle;
+.adresses {
+  &__button {
+    padding: 7px 42px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-bground;
+    color: $color-titles;
+    border: 1px solid $color-additional;
+    border-radius: 0.31rem;
+    @extend %transition;
+    @extend %font-primary;
+    @include font(700, 0.625rem, 0.81rem);
+    @include media-mobile {
+      padding-right: 45px;
+    };
   }
 }
-.panel__button {
-  padding: 5px 27px 5px 20px;
-  text-decoration: none;
-  color: $color-titles;
-  background-color: $color-light;
-  border-radius: 0.625rem;
-  @extend %font-add;
-  @include font(700, 0.875rem, 1.25rem);
-  @include media-mobile {
-    @include font(700, 0.75rem, 1.25rem);
-    padding: 5px 20px;
-  }
-}
-.adresses__button {
-  padding: 7px 42px;
-  text-align: center;
-  text-decoration: none;
-  background-color: $color-bground;
-  color: $color-titles;
-  border: 1px solid $color-additional;
-  border-radius: 0.31rem;
-  @extend %transition;
-  @extend %font-primary;
-  @include font(700, 0.625rem, 0.81rem);
-  @include media-mobile {
-    padding-right: 45px;
-  };
-}
-.welcome__button,
-.service__button,
-.prices__button,
-.adresses__button,
-.panel__button {
+.welcome,
+.service,
+.prices,
+.adresses,
+.panel {
+  &__button {
   &_hover {
     &:hover {
       color: $color-light;
@@ -130,22 +143,21 @@
   }
   }
 }
-.welcome__button,
-.service__button,
-.prices__button,
-.adresses__button,
-.panel__button {
-  &_active {
-    &:active {
-      background-color: $color-primary;
-      border-color: $color-primary;
+}
+.welcome,
+.service,
+.prices,
+.adresses,
+.panel {
+  &__button {
+    &_active {
+      &:active {
+        background-color: $color-primary;
+        border-color: $color-primary;
+      }
     }
   }
 }
-
-
-
-
 
 // Проверить
 .active-btn {
