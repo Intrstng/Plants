@@ -3,6 +3,7 @@
 const cityBlock = document.querySelector('.city');
 const cityMenuHead = document.querySelector('.city__dropdown');
 const cityMenuForm = document.querySelector('.city__dropdown-content');
+const cityMenuFormItems = document.querySelector('.city__dropdown-content p');
 const adressInfoItems = document.querySelectorAll('.adresses__info p');
 const adressCard = document.querySelector('.adresses');
 const adressInfo = document.querySelector('.adresses-info');
@@ -20,17 +21,17 @@ function openCityMenu() {
   cityMenuForm.classList.toggle('closed');
   adressCard.classList.add('closed');
     // SVG-sprite (change)
-    cityDropdownArrow.classList.toggle('city-dropdown-arrow_active');
-  // cityDropdownArrow.innerHTML = '<use xlink:href="./src/img/arrows-sprite.svg#grey-up"></use>';
- 
-//  employeeImg.classList.add('contact__image-block_active');
-// contactHeader.classList.add('title_active');
+    cityDropdownArrow.classList.add('city-dropdown-arrow_active');
+    // cityDropdownArrow.innerHTML = '<use xlink:href="./src/img/arrows-sprite.svg#grey-up"></use>';
+    //  employeeImg.classList.add('contact__image-block_active');
+    // contactHeader.classList.add('title_active');
 }
 function closeCityMenu() {
   cityBlock.classList.remove('city_opened');
   cityMenuHead.classList.remove('city__dropdown_active');
   cityMenuForm.classList.add('closed');
-//  employeeImg.classList.remove('contact__image-block_active');
+  cityDropdownArrow.classList.remove('city-dropdown-arrow_active');
+  //  employeeImg.classList.remove('contact__image-block_active');
   // SVG-sprite (return back)
   // cityDropdownArrow.innerHTML = '<use xlink:href="./src/img/arrows-sprite.svg#grey-down"></use>';
 }
@@ -47,12 +48,11 @@ document.addEventListener('keyup', escClosesCityMenu);
 
 // Закрытие City menu по нажатию вне City menu
 
-document.addEventListener('click', outsideEvtListener);
 function outsideEvtListener(evt) {
-    if (evt.target === cityMenuForm || cityMenuForm.contains(evt.target) || cityMenuHead.contains(evt.target)) return;
+    if (evt.target === cityMenuFormItems || cityMenuHead.contains(evt.target)) return;
     closeCityMenu();
-  }
-
+}
+document.addEventListener('click', outsideEvtListener);
 
   /* ---------------------- Open and fill city adress card ------------------------- */
   // Открытие карточки с адресом по клику на ссылку с названием города в City menu

@@ -17,11 +17,10 @@ function blurRemove(element) {
 function blurFigures(event) {
   // ---- Выбор не более двух кнопок в разделе Service ---- //
   let counter = serviceButtonsBlock.getElementsByClassName('active-btn');
-  let serviceType = event.target.textContent;
-
+  let serviceType;
   if (event.target.closest('button')) {
+    serviceType = event.target.textContent;
     if (counter.length < 2)  {
-   //   console.log(counter.length)
       event.target.classList.toggle('active-btn');
     } else {
       if (event.target.classList.contains('active-btn')) {
@@ -29,7 +28,6 @@ function blurFigures(event) {
       }
  
 // Сюда вставляем код (Внимание! Этот код отдельно от нижнего блока, т.к. counter.length при уменьшении количества активных кнопок корректно работает только здесь)
-//  console.log(counter.length)
    if (counter.length === 1) {
     figuresDataSet.forEach((elem) => {
      if (elem.dataset.type == serviceType && !elem.classList.contains('cards__item_blured')) blurAdd(elem);
