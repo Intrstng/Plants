@@ -58,8 +58,8 @@ document.addEventListener('click', outsideEvtListener);
   // Открытие карточки с адресом по клику на ссылку с названием города в City menu
   // Через делегирование событий
 
-  cityMenuForm.addEventListener('click', openAdressCard);
    function openAdressCard(event) {
+    if (event.target.nodeName !== 'P') return;
     let city, phone, officeAdress;
     // employeeImg.style.marginTop = '-237px'; // Исправить
 
@@ -100,3 +100,4 @@ document.addEventListener('click', outsideEvtListener);
       adressCardBtn.setAttribute('href', 'tel: ' + phone);
       console.log(adressCardBtn.getAttribute('href'));
    }
+   cityMenuForm.addEventListener('click', openAdressCard);

@@ -14,7 +14,6 @@ function openAccordion(event) {
 
 // Task: Пользователь не может одновременно открыть все тарифы услуг, при открытии нового тарифа предыдущее автоматически закрывается.
 if (counterActivePriceCards.length <= 2) {
-  //console.log('!!!')
   for (openedPriceCard of accordionCardOpened) {
     if (!openedPriceCard.classList.contains('accordion__opened_unactive')) {
       openedPriceCard.classList.add('accordion__opened_unactive'); // при открытии нового тарифа предыдущее автоматически закрывается.
