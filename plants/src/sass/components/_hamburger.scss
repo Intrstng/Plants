@@ -12,20 +12,24 @@
   @extend %transition;
   &:hover {
     transform: scale(1.15);
-    & .hamburger__line {
-      border-color: $color-additional;
-      &:before,
-      &:after {
-        background-color: $color-additional;
+    & .hamburger {
+      &__line {
+        border-color: $color-additional;
+        &:before,
+        &:after {
+          background-color: $color-additional;
+        }
       }
     }
   }
   &:active {
-    & .hamburger__line {
-      border-color: $color-primary;
-      &:before,
-      &:after {
-        background-color: $color-primary;
+    & .hamburger {
+      &__line {
+        border-color: $color-primary;
+        &:before,
+        &:after {
+          background-color: $color-primary;
+        }
       }
     }
   }
@@ -71,9 +75,6 @@
     }
   }
 }
-
-
-
 
 // Сдвигает гамбургер кнопку вправо после открытия меню
 .hamburger-btn-position {
