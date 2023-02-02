@@ -1,0 +1,51 @@
+// Humburger menu
+const hamburger = document.querySelector('.hamburger');
+const hamburgerBtn = document.querySelector('.hamburger__line');
+const navigationMenu = document.querySelector('.nav');
+const navigationMenuLinks = document.querySelectorAll('.nav-link');
+const hamburgerPopupOverlay = document.querySelector('.header__navigation');
+
+
+function openHamburgerMenu() {
+  navigationMenu.classList.toggle('nav-active');
+  document.body.classList.toggle('scroll-lock');
+  hamburgerBtn.classList.toggle('hamburger__line_opened');
+  hamburger.classList.toggle('hamburger-btn-position');
+  hamburgerPopupOverlay.classList.add('popup');
+//    navigationMenuLinks[0].removeAttribute('active');
+}
+hamburgerBtn.addEventListener('click', openHamburgerMenu);
+
+
+// Функция закрытия Humburger menu по нажатию на ESC или по нажатию вне Humburger menu
+function closeHamburgerMenu(event) {
+  if (event.code === 'Escape' || event.target == hamburgerPopupOverlay) {
+    document.body.classList.remove('scroll-lock');
+    navigationMenu.classList.remove('nav-active');
+    hamburgerBtn.classList.remove('hamburger__line_opened');
+    hamburger.classList.remove('hamburger-btn-position');
+  } 
+}
+document.addEventListener('keyup', closeHamburgerMenu);
+
+
+// Закрытие Humburger menu по нажатию вне Humburger menu
+
+window.addEventListener('click', closeHamburgerMenu);
+
+//Закрытие Humburger menu при нажатии на ссылку (через делегирование событий)
+
+function clickLinkCloseHamburger(event) {
+  if (event.target.closest('.nav-link')) {
+    // openHamburgerMenu();
+    document.body.classList.remove('scroll-lock');
+    navigationMenu.classList.remove('nav-active');
+    hamburgerBtn.classList.remove('hamburger__line_opened');
+    hamburger.classList.remove('hamburger-btn-position');
+  }
+}
+navigationMenu.addEventListener('click', clickLinkCloseHamburger);
+
+
+
+console.log('Самооценка работы:\n Вёрстка соответствует макету. Ширина экрана 768px 24 / 24;\n Вёрстка соответствует макету. Ширина экрана 380px 24 / 24;\n Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется 15 / 15;\n На ширине экрана 380рх и меньше реализовано адаптивное меню 22 / 22 (Допускается появление адаптивного меню на ширине более 380, но не допускается на ширине более 770px) - у меня при 645px;\n В футере дополнительно добавлены две иконки (GitHub и RS School) из-за этого несоответсвие с макетом (ошибкой согласно ТЗ не считается).\n---------------------------------------------\n Итоговый балл: 75.');
