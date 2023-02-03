@@ -1,6 +1,5 @@
 // Normalize
-@import "../../node_modules/normalize.css/normalize.css"; // переделать на normalize.scss
-// @import "~normalize.css";
+@import "./normalize.css";
 
 @import "abstracts/fonts";
 @import "abstracts/constants";

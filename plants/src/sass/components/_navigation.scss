@@ -28,9 +28,6 @@
     width: 60vw;
     padding: 85px 20px 25px 20px;
   }
-  .nav-active {
-    transform: translateX(0);
-  }
   .nav-item {
     @include media-responsive-645 {
       display: block;
@@ -114,4 +111,7 @@
     }
     }
   }
+}
+.nav-active {
+  transform: translateX(0);
 }

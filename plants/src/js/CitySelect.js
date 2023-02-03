@@ -1,69 +1,58 @@
 /* Task 3 */
 /* ---------------------- City select in contacts menu ------------------------- */
-const cityBlock = document.querySelector('.city');
-const cityMenuHead = document.querySelector('.city__dropdown');
-const cityMenuForm = document.querySelector('.city__dropdown-content');
-const cityMenuFormItems = document.querySelector('.city__dropdown-content p');
-const adressInfoItems = document.querySelectorAll('.adresses__info p');
-const adressCard = document.querySelector('.adresses');
-const adressInfo = document.querySelector('.adresses-info');
-const adressCardBtn = document.querySelector('.adresses__button');
-const employeeImg = document.querySelector('.contact__image-block');
-const contactHeader = document.querySelector('.contact__content').children[1];
-// SVG-sprite
-const cityDropdownArrow = document.querySelector('.city-dropdown-arrow');
-
-cityMenuHead.addEventListener('click', openCityMenu); // cityBtn.addEventListener('click', openCityMenu);
-
-function openCityMenu() {
-  cityBlock.classList.toggle('city_opened');
-  cityMenuHead.classList.toggle('city__dropdown_active');
-  cityMenuForm.classList.toggle('closed');
-  adressCard.classList.add('closed');
-    // SVG-sprite (change)
-    cityDropdownArrow.classList.add('city-dropdown-arrow_active');
-    // cityDropdownArrow.innerHTML = '<use xlink:href="./src/img/arrows-sprite.svg#grey-up"></use>';
-    //  employeeImg.classList.add('contact__image-block_active');
-    // contactHeader.classList.add('title_active');
-}
-function closeCityMenu() {
-  cityBlock.classList.remove('city_opened');
-  cityMenuHead.classList.remove('city__dropdown_active');
-  cityMenuForm.classList.add('closed');
-  cityDropdownArrow.classList.remove('city-dropdown-arrow_active');
-  //  employeeImg.classList.remove('contact__image-block_active');
-  // SVG-sprite (return back)
-  // cityDropdownArrow.innerHTML = '<use xlink:href="./src/img/arrows-sprite.svg#grey-down"></use>';
-}
-
-
+const citySelectData = {
+  cityBlock: document.querySelector('.city'),
+  cityMenuHead: document.querySelector('.city__dropdown'),
+  cityMenuForm: document.querySelector('.city__dropdown-content'),
+  cityMenuFormItems: document.querySelector('.city__dropdown-content p'),
+  adressInfoItems: document.querySelectorAll('.adresses__info p'),
+  adressCard: document.querySelector('.adresses'),
+  adressInfo: document.querySelector('.adresses-info'),
+  adressCardBtn: document.querySelector('.adresses__button'),
+  employeeImg: document.querySelector('.contact__image-block'),
+  contactHeader: document.querySelector('.contact__content').children[1],
+  // SVG-sprite
+  cityDropdownArrow: document.querySelector('.city-dropdown-arrow'),
+  openCityMenu: () => {
+    cityBlock.classList.toggle('city_opened');
+    cityMenuHead.classList.toggle('city__dropdown_active');
+    cityMenuForm.classList.toggle('closed');
+    adressCard.classList.add('closed');
+      // SVG-sprite (change)
+      cityDropdownArrow.classList.add('city-dropdown-arrow_active');
+      // cityDropdownArrow.innerHTML = '<use xlink:href="./src/img/arrows-sprite.svg#grey-up"></use>';
+      //  employeeImg.classList.add('contact__image-block_active');
+      // contactHeader.classList.add('title_active');
+  },
+  closeCityMenu: () => {
+    cityBlock.classList.remove('city_opened');
+    cityMenuHead.classList.remove('city__dropdown_active');
+    cityMenuForm.classList.add('closed');
+    cityDropdownArrow.classList.remove('city-dropdown-arrow_active');
+    //  employeeImg.classList.remove('contact__image-block_active');
+    // SVG-sprite (return back)
+    // cityDropdownArrow.innerHTML = '<use xlink:href="./src/img/arrows-sprite.svg#grey-down"></use>';
+  },
 // Функция закрытия City menu по нажатию на ESC или по нажатию вне City menu
-function escClosesCityMenu(event) {
-  if (event.code === 'Escape') {
-    closeCityMenu();
-  } 
-}
-document.addEventListener('keyup', escClosesCityMenu);
-
-
+  escClosesCityMenu: (event) => {
+    if (event.code === 'Escape') {
+      closeCityMenu();
+    } 
+  },
 // Закрытие City menu по нажатию вне City menu
-
-function outsideEvtListener(evt) {
+  outsideEvtListener: (evt) => {
     if (evt.target === cityMenuFormItems || cityMenuHead.contains(evt.target)) return;
     closeCityMenu();
-}
-document.addEventListener('click', outsideEvtListener);
-
-  /* ---------------------- Open and fill city adress card ------------------------- */
-  // Открытие карточки с адресом по клику на ссылку с названием города в City menu
-  // Через делегирование событий
-
-   function openAdressCard(event) {
+  },
+/* ---------------------- Open and fill city adress card ------------------------- */
+// Открытие карточки с адресом по клику на ссылку с названием города в City menu
+// Через делегирование событий
+   openAdressCard: (event) => {
     if (event.target.nodeName !== 'P') return;
     let city, phone, officeAdress;
     // employeeImg.style.marginTop = '-237px'; // Исправить
 
-    // adressesDataBase - база данных город - телефон - адрес
+// adressesDataBase - база данных город - телефон - адрес
     const adressesDataBase = {
       'Yonkers, NY': {
                       phone: '+1	914	678 0003',
@@ -82,7 +71,6 @@ document.addEventListener('click', outsideEvtListener);
         'office adress': '9 East 91st Street',
       },
     };
-
     if (event.target.closest('p')) {
       closeCityMenu();
     }
@@ -96,8 +84,25 @@ document.addEventListener('click', outsideEvtListener);
       officeAdress = adressesDataBase[city]['office adress']; // определяем из базы данных адрес выбранного города
       adressInfoItems[2].textContent = officeAdress;
     
-    // Вставка номера выбранного города в ссылку href кнопки .adresses__button
+// Вставка номера выбранного города в ссылку href кнопки .adresses__button
       adressCardBtn.setAttribute('href', 'tel: ' + phone);
       console.log(adressCardBtn.getAttribute('href'));
-   }
-   cityMenuForm.addEventListener('click', openAdressCard);
+   },
+}
+
+export const cityBlock = citySelectData.cityBlock;
+export const cityMenuHead = citySelectData.cityMenuHead;
+export const cityMenuForm = citySelectData.cityMenuForm;
+export const cityMenuFormItems = citySelectData.cityMenuFormItems;
+export const adressInfoItems = citySelectData.adressInfoItems;
+export const adressCard = citySelectData.adressCard;
+export const adressInfo = citySelectData.adressInfo;
+export const adressCardBtn = citySelectData.adressCardBtn;
+export const employeeImg = citySelectData.employeeImg;
+export const contactHeader = citySelectData.contactHeader;
+export const cityDropdownArrow = citySelectData.cityDropdownArrow;
+export const openCityMenu = citySelectData.openCityMenu;
+export const closeCityMenu = citySelectData.closeCityMenu;
+export const escClosesCityMenu = citySelectData.escClosesCityMenu;
+export const outsideEvtListener = citySelectData.outsideEvtListener;
+export const openAdressCard = citySelectData.openAdressCard;

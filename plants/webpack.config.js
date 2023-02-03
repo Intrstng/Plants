@@ -1,8 +1,8 @@
-const webpack = require('webpack');
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require("webpack");
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = (env, options) => {
@@ -44,18 +44,20 @@ module.exports = (env, options) => {
             "sass-loader",
           ],
         },
-        {
-          test: /\.css$/i,
-          use: [MiniCssExtractPlugin.loader, "css-loader"],
-        },
+        // {
+        //   test: /\.css$/i,
+        //   use: [
+        //     MiniCssExtractPlugin.loader,
+        //     "css-loader"],
+        // },
         {
           test: /\.(png|jpeg|jpg|gif)$/,
           type: 'asset/resource',                 
         },
         {
-            test: /\.(woff(2)|eot|ttf|otf|svg)$/,
-            type: 'asset/inline',                 
-          },
+          test: /\.(woff(2)|eot|ttf|otf|svg)$/,
+          type: 'asset/inline',                 
+        },
       {
         test: /\.m?js$/,
         exclude: /(node_modules)/,

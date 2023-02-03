@@ -45,7 +45,7 @@
     z-index: 1;
     // Убрать // (подгонка под макет)
     padding-left: 6px;
-    ////////////
+    ///////////
     @include media-tablet {
       padding: 11px 12px 11px 6px;
     }
@@ -110,6 +110,11 @@
         @include font(700, 0.75rem, 1.25rem);
         padding: 5px 20px;
       }
+      &_selected {
+        color: $color-light;
+        background-color: $color-primary;
+        border-color: $color-primary;
+      }
     }
   }
 }
@@ -158,11 +163,9 @@
     }
   }
 }
-
 // Проверить
 .active-btn {
   color: $color-light;
   background-color: $color-primary;
   border-color: $color-primary;
 }
-/////////////////////////
