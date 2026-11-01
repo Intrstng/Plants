@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  //margin-right: 17px;
+  scroll-behavior: smooth;
+  body {
+    //max-width: $page-width;
+    margin: 0 auto;
+    @extend %font-primary;
+    font-size: 1rem;
+    h1 {
+      color: $color-titles;
+      @extend %font-add;
+      @include font(700, 2.8rem, 3.125rem);
+      @include media-responsive {
+        @include font(700, 2.18rem, 3.125rem);
+      }
+      @include media-mobile {
+        @include font(700, 1.56rem, 2.18rem);
+      }
+    }
+    h2 {
+      @extend %font-primary;
+      @include font(400, 2.5rem, 3.25rem);
+      @include media-tablet {
+        @include font(400, 2.18rem, 2.875rem);
+      }
+      @include media-mobile {
+        @include font(400, 1.56rem, 2.06rem);
+      }
+    }
+    h3 {
+      @extend %font-add;
+      @include font(700, 1.25rem, 1.25rem);
+    }
+    h4 {
+      @extend %font-add;
+      @include font(700, 2.5rem, 3.125rem);
+      @include media-tablet {
+        @include font(700, 1.56rem, 2.18rem);
+      }
+      @include media-mobile {
+        @include font(700, 1.25rem, 2.18rem);
+      }
+    }
+  }
+  .scroll-lock {
+    overflow: hidden;
+  }
+  .active {
+    display: block;
+  }
+  .grid {
+    display: grid;
+  }
+}

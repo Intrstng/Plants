@@ -1,0 +1,117 @@
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  gap: 47px;
+  @include media-tablet-min {
+    gap: 25px;
+  }
+  @include media-responsive-645 {
+    // display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw; 
+    z-index: 3;
+    flex-direction: column;
+    gap: 1%;
+    padding: 80px 20px 30px 20px;
+    background: $color-menu-head-active;
+    border: 1px solid $color-hr-line;
+    box-shadow: -1px 1px 5px $color-hr-line;
+    transform: translateX(101%);
+    transition: transform 0.5s;
+  }
+  @include media-mobile {
+    width: 60vw;
+    padding: 85px 20px 25px 20px;
+  }
+  .nav-item {
+    @include media-responsive-645 {
+      display: block;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0px;
+        bottom: 7px;
+        background-color: $color-titles;
+        transition: all 0.3s linear;
+      }
+      &:hover {
+        &:after {
+          background-color: $color-additional;
+        }
+        & .nav-link {
+          &_hover {
+            color: $color-additional; 
+          }
+        }
+      }
+    }
+  // Проверить (было в html active у nav-link, перенес active в nav-item)
+    &[active] {
+      & .nav-link {
+        color: $color-additional;
+      }
+    }
+  // Убрать // (подгонка под макет)
+  &:first-child {
+    margin-right: -4px;
+    @include media-responsive-645 {
+      margin-right: 0;
+    }
+  }
+  /////////////////////////////////
+  }
+  .nav-link {
+    letter-spacing: 0.1px;
+    text-decoration: none;
+    color: $color-links;
+    @extend %font-primary;
+    @include font(400, 1rem, 3.125rem);
+    &_hover {
+        transition: all 0.1s linear;
+        &:not([active]) {
+            &:hover {
+                color: $color-additional;
+            }
+            &:active {
+                color: $color-primary;
+            }
+        }
+    }
+    &_hover[active] {
+        color: $color-additional;
+    }
+    @include media-responsive-645 {
+      display: block;
+      color: $color-titles;
+      &_hover {
+        &:not([active]) {
+            &:hover {
+                color: $color-additional;
+            }
+            &:active {
+                color: $color-light;
+            }
+        }
+      }
+      &_hover[active] {
+        & .nav-item {
+          &:after {
+            background-color: $color-additional;
+          }
+        }
+    }
+    }
+  }
+}
+.nav-active {
+  transform: translateX(0);
+}

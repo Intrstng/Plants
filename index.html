@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/public/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Plants</title>
+</head>
+<body>
+<!-- Header
+======================== -->
+<header class="header">
+  <div class="header__content container">
+  <a class="logo" href="index.html"><object class="logo__img" type="image/svg+xml" data="./src/img/logo.svg">Your browser does not support SVG</object></a>
+    <nav class="header__navigation">
+      <ul class="nav">
+        <li class="nav-item" active><a class="nav-link nav-link_hover" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="#about">About us</a></li>
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="#service">Service</a></li>
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="#price">Price</a></li>
+        <li class="nav-item"><a class="nav-link nav-link_hover" href="#contacts">Contacts</a></li>    
+      </ul>
+    </nav>
+    <span class="hamburger">
+      <div class="hamburger__line"></div>
+    </span>
+  </div>
+</header>
+<!-- Main
+======================== -->
+<main> 
+<!-- Welcome
+======================== -->
+<section class="welcome" aria-label="welcome section" id="welcome">
+  <div class="welcome__content container">
+  <picture class="welcome__image-block">
+    <source srcset="./src/img/responsive_images/leafs_responsive.png" media="(max-width: 1000px)">
+    <img class="welcome__image" src="./src/img/leafs.png" alt="leafs">
+  </picture>
+    <div class="welcome__card">
+        <h1 class="welcome__title">We grow <span>plants</span> and give you oxygen</h1>
+          <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <button class="welcome__button welcome__button_hover welcome__button_active" type="button">LEARN MORE</button>
+    </div>
+  </div>
+</section>
+
+<!-- About
+======================== -->
+<section class="about" aria-label="about us section" id="about">
+  <div class="about__content container">
+  <div class="about__card">
+    <h2 class="about__subtitle">We are <span>professional experienced</span> gardeners</h2>
+      <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+  </div>
+    <picture class="about__image-block">
+      <source srcset="./src/img/mobile_images/houseplant_mobile.png" media="(max-width: 380px)">
+      <source srcset="./src/img/responsive_images/houseplant_responsive.png" media="(max-width: 768px)">
+      <img class="about__image" src="./src/img/houseplant_1.png" alt="houseplant">
+    </picture>
+  </div>
+</section>
+
+<!-- Service
+======================== -->
+<section class="service" aria-label="service and our projects section" id="service">
+  <div class="service__content">
+    <div class="service__head container">
+      <h2 class="service__subtitle">Service and our projects</h2>
+        <div class="service__buttons">
+          <button class="service__button button service__button_hover service__button_active" type="button">Gardens</button>
+            <button class="service__button button service__button_hover service__button_active" type="button">Lawn</button>
+              <button class="service__button button service__button_hover service__button_active" type="button">Planting</button>
+        </div>
+    </div>
+    <div class="cards grid container">
+      <div class="cards__item">
+        <figure data-type="Gardens">
+          <picture>
+            <source srcset="./src/img/service_card_small/project_1_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./src/img/projects_1.jpg" alt="master">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Garden care</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </div>
+
+      <div class="cards__item">
+        <figure data-type="Planting">
+          <picture>
+            <source srcset="./src/img/service_card_small/project_2_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./src/img/projects_2.jpg" alt="lemon">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Planting</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </div>
+
+      <div class="cards__item">
+        <figure data-type="Lawn">
+          <picture>
+            <source srcset="./src/img/service_card_small/project_3_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./src/img/projects_3.jpg" alt="care">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Lawn care</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </div>
+
+      <div class="cards__item">
+        <figure data-type="Planting">
+          <picture>
+            <source srcset="./src/img/service_card_small/project_4_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./src/img/projects_4.jpg" alt="girl">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Planting</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </div>
+
+      <div class="cards__item">
+        <figure data-type="Gardens">
+          <picture>
+            <source srcset="./src/img/service_card_small/project_5_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./src/img/projects_5.jpg" alt="flowers">
+          </picture>
+            <figcaption>
+                <h3 class="cards-title">Garden care</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </div>
+
+      <div class="cards__item">
+        <figure data-type="Planting">
+          <picture>
+            <source srcset="./src/img/service_card_small/project_6_small.jpg" media="(max-width: 1000px)">
+            <img class="cards-img" src="./src/img/projects_6.jpg" alt="cactus">
+          </picture>
+            <figcaption>
+              <h3 class="cards-title">Planting</h3>
+                <p class="cards-text">Lorem Ipsum has been the industry</p>
+            </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Prices
+======================== -->
+<section class="prices" aria-label="prices section" id="price">
+  <div class="prices__content container">
+  <div class="prices__card">
+    <h2 class="prices__subtitle">Prices</h2>
+  <!-- Prices accordion
+  ======================== -->
+  <div class="accordion">
+    <!-- Accordion first item -->
+    <div class="accordion__button accordion__button_hover" data-plan="Basics">
+      <p class="accordion__text-button">Basics</p>
+        <div class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active"><img src="./src/img/accordion_btn.svg" width="16" height="16" alt="dropdown"></div>
+    </div>
+      <div class="accordion__opened accordion__opened_unactive">
+        <div class="accordion__button-opened">
+          <p>Basics</p>
+            <div class="accordion__dropup-btn accordion__dropup-btn_hover accordion__dropup-btn_active"><img src="./src/img/accordion_btn_close.svg" width="16" height="16" alt="dropup"></div>
+        </div>
+          <p class="panel__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+            <p class="panel__price"><span>15</span>/ per hour</p>
+              <a class="panel__button panel__button_hover panel__button_active" href="#contacts">Order</a>
+      </div>
+
+    <!-- Accordion second item -->
+    <div class="accordion__button accordion__button_hover"  data-plan="Standard">
+      <p class="accordion__text-button">Standard</p>
+        <div class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active"><img src="./src/img/accordion_btn.svg" width="16" height="16" alt="dropdown"></div>
+    </div>
+      <div class="accordion__opened accordion__opened_unactive">
+        <div class="accordion__button-opened">
+          <p>Standard</p>
+            <div class="accordion__dropup-btn accordion__dropup-btn_hover accordion__dropup-btn_active"><img src="./src/img/accordion_btn_close.svg" width="16" height="16" alt="dropup"></div>
+        </div>
+          <p class="panel__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+            <p class="panel__price"><span>25</span>/ per hour</p>
+              <a class="panel__button panel__button_hover panel__button_active" href="#contacts">Order</a>
+      </div>
+
+    <!-- Accordion third item -->
+    <div class="accordion__button accordion__button_hover"  data-plan="Pro care">
+      <p class="accordion__text-button">Pro care</p>
+        <div class="accordion__dropdown-btn accordion__dropdown-btn_hover accordion__dropdown-btn_active"><img src="./src/img/accordion_btn.svg" width="16" height="16" alt="dropdown"></div>
+    </div>
+      <div class="accordion__opened accordion__opened_unactive">
+        <div class="accordion__button-opened">
+          <p>Pro care</p>
+            <div class="accordion__dropup-btn accordion__dropup-btn_hover accordion__dropup-btn_active"><img src="./src/img/accordion_btn_close.svg" width="16" height="16" alt="dropup"></div>
+        </div>
+          <p class="panel__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+            <p class="panel__price"><span>35</span>/ per hour</p>
+              <a class="panel__button panel__button_hover panel__button_active" href="#contacts">Order</a>
+      </div>
+  </div>
+  </div>
+
+    <div class="prices__contacts">
+      <h4>Our best <span>gardeners</span> are ready to help you</h4>
+        <button class="prices__button button prices__button_hover prices__button_active" type="button">Contact us</button>
+        <img class="prices__leafs-right" src="./src/img/leafs_small.png" alt="leafs">
+    </div>
+  </div>
+</section>
+
+<!-- Contact us
+======================== -->
+<section class="contact" aria-label="contact us section" id="contacts">
+  <div class="contact__content container">
+    <picture class="contact__image-block">
+      <source srcset="./src/img/mobile_images/contact_woman_1.png" media="(max-width: 380px)">
+      <source srcset="./src/img/responsive_images/contact_woman.png" media="(max-width: 1000px)">
+      <img class="contact__employee-image" src="./src/img/employee.png" alt="employee">
+    </picture>
+      <h2>Contact us</h2>
+
+<!-- City select -->
+<div class="city">
+  <div class="city__dropdown city__dropdown_hover">
+    <p class="city__text">City</p>
+    <div class="city__dropdown-btn city__dropdown-btn_hover city__dropdown-btn_active"><svg class="city-dropdown-arrow"><use xlink:href="./src/img/arrows-sprite.svg#grey-down"></use></svg></div>
+  </div>
+  <div class="city__dropdown-content closed">
+    <p >Canandaigua, NY</p>
+    <p >New York City</p>
+    <p >Yonkers, NY</p>
+    <p >Sherrill, NY</p>
+  </div>
+  <!-- City adresses card -->
+    <div class="adresses adresses__position closed">
+      <div class="adresses__content">
+      <div class="adresses__titles">
+          <p>City:</p>
+          <p>Phone:</p>
+          <p>Office adress:</p>
+      </div>
+          <div class="adresses__info">
+              <p class="city-info">Enter city in Data Base</p>
+              <p class="phone-info">Enter phone in Data Base</p>
+              <p class="office-info">Enter adress in Data Base</p>
+          </div>
+      </div>
+      <div class="adresses-btn"><a class="adresses__button adresses__button_hover adresses__button_active" href="tel:00000000000">Call us</a></div>
+    </div>
+</div>
+  </div>
+</section>
+</main>
+<!-- Footer
+======================== -->
+<footer class="footer">
+  <div class="footer__content container"> 
+  <div class="footer__copyright">
+    <p>&copy;</p>
+    <p class="year">2022</p>
+    <p>github</p>
+  </div>
+  <p class="logo-rs">Rolling Scopes School</p>
+  <ul class="social">
+    <li class="social__item"><a class="social__link social__link_hover" href="https://github.com/Intrstng" target="_blank"><img class="social__icon git-img" src="./src/img/github.svg" alt="GitHub icon"></a></li>
+      <li class="social__item"><a class="social__link social__link_hover" href="https://rs.school/js-stage0/" target="_blank"><img class="social__icon rs-img" src="./src/img/rsschool.svg" alt="RS icon"></a></li>
+        <li class="social__item"><a class="social__link social__link_hover" href="https://www.instagram.com/accounts/login/" target="_blank"><img class="social__icon" src="./src/img/inst_1.svg" alt="instagram"></a></li>
+          <li class="social__item"><a class="social__link social__link_hover" href="https://m.facebook.com/login/?locale2=ru_RU" target="_blank"><img class="social__icon" src="./src/img/fb_1.svg" alt="facebook"></a></li>
+            <li class="social__item"><a class="social__link social__link_hover" href="https://twitter.com/login?lang=ru" target="_blank"><img class="social__icon" src="./src/img/tw_1.svg" alt="twitter"></a></li>
+              <li class="social__item"><a class="social__link social__link_hover" href="https://www.pinterest.com/" target="_blank"><img class="social__icon" src="./src/img/pinterest_1.svg" alt="pinterest"></a></li>
+  </ul>
+  </div>
+</footer>
+</body>
