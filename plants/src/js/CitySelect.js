@@ -86,7 +86,7 @@ const citySelectData = {
     
 // Вставка номера выбранного города в ссылку href кнопки .adresses__button
       adressCardBtn.setAttribute('href', 'tel: ' + phone);
-      console.log(adressCardBtn.getAttribute('href'));
+      // console.log(adressCardBtn.getAttribute('href'));
    },
 }
 

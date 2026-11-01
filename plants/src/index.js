@@ -9,7 +9,7 @@ import { serviceButtonsBlock, blurFigures } from './js/Blur.js';
 import { cityMenuHead, cityMenuForm, openCityMenu, escClosesCityMenu,
         outsideEvtListener, openAdressCard } from './js/CitySelect.js';
 
-window.onload = showGreetings();
+// window.onload = showGreetings();
 
 /* Task 1 */
 /* ---------------------- Blur service section cards ------------------------- */

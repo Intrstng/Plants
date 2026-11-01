@@ -22,8 +22,6 @@ const hamburgerData = {
   },
   //Закрытие Humburger menu при нажатии на ссылку (через делегирование событий)
   clickLinkCloseHamburger: (event) => {
-    console.log(navigationMenu)
-    console.log(this)
     if (event.target.closest('.nav-link')) {
       document.body.classList.remove('scroll-lock');
       navigationMenu.classList.remove('nav-active');
